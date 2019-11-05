@@ -2,65 +2,100 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import about from './images/about.jpg'
+import brandonpic from './images/BrandonPic.jpg'
+import Lottie from 'react-lottie'
+import animationData from './images/greeting.json'
+import Scrollspy from 'react-scrollspy'
+import { Card,Nav, Navbar,NavDropdown, Row, Col, Container, Jumbotron, Button } from 'react-bootstrap'
+
+import Headroom from 'react-headroom'
 
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: '',
+   
+  }
+}
 
+const jumbo = {
+  backgroundColor: 'transparent '
+}
 
+const lottietitle = {
+  backgroundColor: 'transparent '
+}
 
 
 
 
 function App() {
   return (
-    <div>
-   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><span>R</span>onaldo</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+ 
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section class="hero-wrap js-fullheight">
+	  <div>
+
+
+
+
+
+
+  <body >	  
+
+  <Headroom disableInlineStyles={true} >
+  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="#home-section">Home</Nav.Link>
+      <Nav.Link href="#about-section">About</Nav.Link>
+      <Nav.Link href="#resume-section">Resume</Nav.Link>
+      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+    <Nav>
+      <Nav.Link href="#deets">More deets</Nav.Link>
+      <Nav.Link eventKey={2} href="#memes">
+        Dank memes
+      </Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+</Headroom>
+
+      <header id="first">
+      <section class="hero-wrap js-fullheight">
       <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-          	<div class="text text-center">
-          		<span class="subheading">Hey! I am</span>
-		  				<h1>Ronaldo Fredrickson</h1>
-			  				<h2>I'm a 
-								  <span
-								     class="txt-rotate"
-								     data-period="2000"
-								     data-rotate='[ "Web Designer.", "Developer.", "Photographer.", "Marketer.", "Blogger" ]'></span>
-								</h2>
-							</div>
+        <div class="header-content"> <Lottie options={defaultOptions} width={'80vmin'} />
+            <div class="inner">
+            <Jumbotron style={jumbo}>
+          <p>
+           
+          </p>
+          <p>
+            I'm a software engineer in frontend and backend development for
+            complex scalable web apps. I write about software development on my
+            blog. Want to know how I may help your project? Check out my project
+            portfolio and online resume.
+          </p>
+          <p>
+            <Button href="#about-section" variant="primary">Learn more</Button>
+          </p>
+        </Jumbotron>
             </div>
-          </div>
         </div>
-  
-      <div class="mouse">
-				<a href="#" class="mouse-icon">
-					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-				</a>
-			</div>
-    </section>
+      </section>
+    </header>
+
 
     <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
     	<div class="container">
@@ -68,7 +103,7 @@ function App() {
     			<div class="col-md-6 col-lg-6 d-flex">
     				<div class="img-about img d-flex align-items-stretch">
     					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style={{backgroundImage: `url(${about})`}}>
+	    				<div class="img d-flex align-self-stretch align-items-center" style={{backgroundImage: `url(${brandonpic})`}}>
 	    				</div>
     				</div>
     			</div>
@@ -138,7 +173,7 @@ function App() {
 					  </nav>
 					</div>
 					<div class="col-md-9">
-					  <div id="page-1" class= "page one">
+					  <div id="page-1" class= "page">
 					  	<h2 class="heading">Education</h2>
 					    <div class="resume-wrap d-flex ">
 					    	<div class="icon d-flex align-items-center justify-content-center">
@@ -887,23 +922,10 @@ function App() {
 
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
     
   </body>
   </div>
+
   );
 }
 

@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -3360,18 +3360,12 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
+  color: black;
   margin-bottom: 0;
   list-style: none; }
+  
 
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem; }
-  .nav-link:hover, .nav-link:focus {
-    text-decoration: none; }
-  .nav-link.disabled {
-    color: #6c757d;
-    pointer-events: none;
-    cursor: default; }
+
 
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }
@@ -3425,6 +3419,15 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
 
+
+.navcolor {
+  background-color: "white"
+}
+
+
+
+
+
 .navbar {
   position: relative;
   display: -webkit-box;
@@ -3435,6 +3438,7 @@ input[type="button"].btn-block {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: rgb(255, 255, 255);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -3445,6 +3449,7 @@ input[type="button"].btn-block {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
     flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -3473,6 +3478,7 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 0;
+
   margin-bottom: 0;
   list-style: none; }
   .navbar-nav .nav-link {
@@ -8390,6 +8396,7 @@ h1, h2, h3, h4, h5,
 .hero-wrap {
   width: 100%;
   height: 100%;
+
   position: inherit;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -8402,6 +8409,7 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .1;
     width: 50%;
+    z-index: -0;
     background: #3e64ff; }
   .hero-wrap .text {
     width: 100%; }

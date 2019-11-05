@@ -1,0 +1,93 @@
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('http://www.masterslider.com/wp-content/uploads/sites/5/2016/09/heroheader1-bg.jpg');
+
+  /* Set a specific height */
+  height: 200%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: 100%;
+
+  /* background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg'); */
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header .overlay {
+  background-color: black;
+}
+
+header .header-content {
+  position: relative;
+  width: 100%;
+  padding: 200px 15px;
+  text-align: center;
+  z-index: 0;
+}
+
+header .header-content .inner h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header .header-content .inner p {
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.mobile-lottie {
+  width: 15%;
+}
+
+.page-1 {
+  margin-top: 50px;
+}
