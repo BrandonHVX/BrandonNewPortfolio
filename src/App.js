@@ -22,6 +22,7 @@ import projectpic from './images/work-1.jpg'
 import bootstrap from './images/bootstrap.svg'
 import about from './images/about.jpg'
 import brandonpic from './images/BrandonPic.jpg'
+import nyxlogo from './images/nyx-logo.png'
 import Lottie from 'react-lottie'
 import animationData from './images/greeting.json'
 import Scrollspy from 'react-scrollspy'
@@ -105,10 +106,8 @@ function App() {
       <div class="overlay"></div>
         <div class="header-content"> <Lottie options={defaultOptions} width={'80vmin'} />
             <div class="inner">
-            <Jumbotron style={jumbo}>
-          <p>
-           
-          </p>
+            
+       
           <p>
             I'm a software engineer in frontend and backend development for
             complex scalable web apps. I write about software development on my
@@ -118,7 +117,7 @@ function App() {
           <p>
             <Button href="#about-section" variant="primary">Learn more</Button>
           </p>
-        </Jumbotron>
+       
             </div>
         </div>
       </section>

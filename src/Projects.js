@@ -7,10 +7,15 @@ import {
   Col,
   Container,
   Jumbotron,
-  Button
+  Button,
+  Modal,
+  ButtonToolbar
 } from "react-bootstrap";
-import projectpic from './images/work-1.jpg'
-
+import projectpic from "./images/work-1.jpg";
+import nyxlogo from "./images/posted-logo.svg";
+import salon from "./images/salon.svg";
+import bta from "./images/bta.svg";
+import ReactPlayer from "react-player";
 
 const nav = {
   borderColor: "#00387d",
@@ -38,12 +43,47 @@ const navlinks = {
   borderColor: "blue"
 };
 
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <div>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </div>
+      <Modal.Body>
+        <div class="d-flex justify-content-center bg-secondary mb-3">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=FE5VhXSu3TU"
+            playing
+          />
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 export default function MyTabs(props) {
   const [activeTab, setActiveTab] = useState("1");
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <div>
-
-
       <div style={text}>
         <Tab.Container defaultActiveKey="first">
           <Nav variant="pills" style={navtabs}>
@@ -63,76 +103,182 @@ export default function MyTabs(props) {
 
           <Tab.Content>
             <Tab.Pane eventKey="first">
-           
-            <div class="row no-gutters py-4">
-    			<div class="col-md-4">
-    				<div class="project img d-flex justify-content-center align-items-center" style={{backgroundImage: `url(${projectpic})`}}>
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-4">
-    				<div class="project img d-flex justify-content-center align-items-center" style={{backgroundImage: `url(${projectpic})`}} >
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
+              <div class="row no-gutters py-4">
+                <div class="col-md-4">
+                  <div
+                    class="project img d-flex justify-content-center align-items-center"
+                    style={{ backgroundImage: `url(${projectpic})` }}
+                  >
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="project img d-flex justify-content-center align-items-center"
+                    style={{ backgroundImage: `url(${nyxlogo})` }}
+                  >
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
 
-    			<div class="col-md-4">
-    				<div class="project img d-flex justify-content-center align-items-center" style={{backgroundImage: `url(${projectpic})`}} >
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" >
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" >
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" >
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    		</div>
-    
-   
+                <div class="col-md-4">
+                  <div
+                    class="project img d-flex justify-content-center align-items-center"
+                    style={{ backgroundImage: `url(${projectpic})` }}
+                  >
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
-            Video
+              <div class="row no-gutters py-4">
+                <div class="col-md-4">
+                  <div
+                    class="project img d-flex justify-content-center align-items-center"
+                    style={{ backgroundImage: `url(${bta})` }}
+                  >
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Bands by Taylor Alexandria</a>
+                      </h3>
+                      <span>
+                        Business Profile for Fashion Designer Taylor Alexandria
+                      </span>
+                      <ButtonToolbar>
+                        <Button
+                          variant="primary"
+                          onClick={() => setModalShow(true)}
+                        >
+                          Launch vertically centered modal
+                        </Button>
+
+                        <MyVerticallyCenteredModal
+                          show={modalShow}
+                          onHide={() => setModalShow(false)}
+                        />
+                      </ButtonToolbar>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="project img d-flex justify-content-center align-items-center"
+                    style={{ backgroundImage: `url(${salon})` }}
+                  >
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div
+                    class="project img d-flex justify-content-center align-items-center"
+                    style={{ backgroundImage: `url(${projectpic})` }}
+                  >
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3>
+                        <a href="#">Branding &amp; Illustration Design</a>
+                      </h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Tab.Pane>
-            <Tab.Pane eventKey="third">
-             Design
-            </Tab.Pane>
-            <Tab.Pane eventKey="fourth">
-            Motion
-            </Tab.Pane>
+            <Tab.Pane eventKey="third">Design</Tab.Pane>
+            <Tab.Pane eventKey="fourth">Motion</Tab.Pane>
           </Tab.Content>
         </Tab.Container>
       </div>
