@@ -12,10 +12,19 @@ import {
   ButtonToolbar
 } from "react-bootstrap";
 import projectpic from "./images/work-1.jpg";
-import nyxlogo from "./images/posted-logo.svg";
+import nyxlogo from "./images/nyx-logo.png";
 import salon from "./images/salon.svg";
 import bta from "./images/bta.svg";
+import jobsnow from "./images/JOBSNOW.png";
 import ReactPlayer from "react-player";
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
 
 const nav = {
   borderColor: "#00387d",
@@ -78,11 +87,23 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
+
+
+
+
+
+
+
+
+
 export default function MyTabs(props) {
   const [activeTab, setActiveTab] = useState("1");
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
+
+
+    
     <div>
       <div style={text}>
         <Tab.Container defaultActiveKey="first">
@@ -104,21 +125,21 @@ export default function MyTabs(props) {
           <Tab.Content>
             <Tab.Pane eventKey="first">
               <div class="row no-gutters py-4">
-                <div class="col-md-4">
+                <div class="col-md-6 lg-4">
                   <div
                     class="project img d-flex justify-content-center align-items-center"
-                    style={{ backgroundImage: `url(${projectpic})` }}
+                    style={{ backgroundImage: `url(${jobsnow})`, backgroundColor: "blue" }}
                   >
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
-                      <h3>
-                        <a href="#">Branding &amp; Illustration Design</a>
-                      </h3>
-                      <span>Web Design</span>
+                    
+                        <Link to="/jobsnow">Jobs Now</Link>
+                     
+                      <span>Web Development</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 lg-4">
                   <div
                     class="project img d-flex justify-content-center align-items-center"
                     style={{ backgroundImage: `url(${nyxlogo})` }}
@@ -133,7 +154,7 @@ export default function MyTabs(props) {
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6 lg-4">
                   <div
                     class="project img d-flex justify-content-center align-items-center"
                     style={{ backgroundImage: `url(${projectpic})` }}
@@ -283,5 +304,6 @@ export default function MyTabs(props) {
         </Tab.Container>
       </div>
     </div>
+
   );
 }
