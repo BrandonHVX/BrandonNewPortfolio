@@ -8977,6 +8977,9 @@ h1, h2, h3, h4, h5,
           opacity: 1; }
           .project.img-2 .text span {
             color: rgba(255, 255, 255, 0.8); } }
+
+
+
   .project .overlay {
     position: absolute;
     top: 0;
@@ -8985,7 +8988,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: 0;
-    background: #3e64ff;
+    background: #ffffff;
     z-index: -1;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -8994,7 +8997,8 @@ h1, h2, h3, h4, h5,
     transition: all 0.3s ease; }
     @media (max-width: 767.98px) {
       .project .overlay {
-        opacity: .2; } }
+        opacity: .9;
+        background: #000000; } }
   .project .text {
     max-width: 80%;
     z-index: 1;
@@ -9018,12 +9022,21 @@ h1, h2, h3, h4, h5,
       .project .text {
         opacity: 1; }
         .project .text span {
-          color: rgba(255, 255, 255, 0.8); } }
+          color: rgba(255, 255, 255, 0.8); } 
+        }
+        
+
+
+
+
   .project:hover .overlay, .project:focus .overlay {
-    opacity: .9; }
+    opacity: 0.1; }
   .project:hover .text, .project:focus .text {
     opacity: 1; }
 
+
+
+    
 .aside-stretch {
   background: #718dff; }
   .aside-stretch:after {
