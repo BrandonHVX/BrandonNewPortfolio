@@ -95,17 +95,19 @@ function Main() {
 
 	  <div>
 
-     <Headroom disableInlineStyles={true} >
-  <NavBar />
-</Headroom>
+
+ 
+
 
 
 
   <body >	  
+ 
 	<Parallax className="custom-bg" strength={300}>
          <header id="first">
+
       <section class="hero-wrap js-fullheight">
-      <div class="overlay"></div>
+      <div class="overlay"></div><NavBar />
         <div class="header-content"> <Lottie options={defaultOptions} width={'80vmin'} />
             <div class="inner">
             

@@ -32,10 +32,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function NavBar() {
   return (
     <Router>
-      <div className="App wrapper">
-      <Headroom disableInlineStyles={true} >
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">B</Navbar.Brand>
+      
+  <Navbar class='navbar' collapseOnSelect expand="lg" >
+  <Navbar.Brand   class='navbar' href="#home">B</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
@@ -59,9 +58,9 @@ function NavBar() {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-</Headroom>
+
       
-      </div>
+
     </Router>
   );
 }

@@ -3420,9 +3420,7 @@ input[type="button"].btn-block {
   display: block; }
 
 
-.navcolor {
-  background-color: "white"
-}
+
 
 
 
@@ -3438,7 +3436,7 @@ input[type="button"].btn-block {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background: transparent;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -3449,7 +3447,7 @@ input[type="button"].btn-block {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
+    background: transparent;
     flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -8372,6 +8370,7 @@ h1, h2, h3, h4, h5,
 .navbar-brand {
   font-weight: 900;
   font-size: 26px;
+
   position: relative;
   z-index: 0; }
   .navbar-brand:after {
@@ -8407,11 +8406,11 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity: .1;
-    width: 50%;
+
+    width: 100%;
     height: 100vh;
     z-index: -0;
-    background: #3e64ff; }
+    background: #028c9ec9; }
   .hero-wrap .text {
     width: 100%; }
 
