@@ -125,7 +125,7 @@ function Main() {
       </section>
     </header>
             <Background >
-                <img src={bgheader} style={{height:'100vh'}} />
+                <img src={bgheader} style={{height:'110vh'}} />
             </Background>
         </Parallax>
 
@@ -140,12 +140,12 @@ function Main() {
     			<div class="col-md-6 col-lg-6 d-flex">
     				<div class="img-about img d-flex align-items-stretch">
     					<div class="overlay"></div>
-              <div class="img d-flex align-self-stretch align-items-center" style={{backgroundImage: `url(${brandonpic})`,borderRadius: "90%", width: "300px", height: "300px", marginTop:"90px"
+              <div class="img d-flex align-self-stretch align-items-center" style={{backgroundImage: `url(${brandonpic})`,borderRadius: "90%", width: "300px", height: "300px", margin:"30px"
             }}>
 	    				</div>
     				</div>
     			</div>
-    			<div class="col-md-6 col-lg-6 pl-md-2">
+    			<div class="col-md-6 col-lg-6 pl-md-2 ">
     				<div class="row justify-content-start pb-3">
 		          <div class="col-md-12 heading-section ">
 		          	<h1 class="big">About</h1>
@@ -176,14 +176,7 @@ function Main() {
     </section>
 		<section class="ftco-section" id="services-section">
     	<div class="container-fluid px-md-5">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ">
-					<div id="page-1" class= "page">
-					  	<h2 class="heading">Education</h2>
-						
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>	</div>
-          </div>
-        </div>
+    
     		<div class="row">
 					<div class="col-md-4 text-center d-flex ">
 						<div class="services-1 shadow">
