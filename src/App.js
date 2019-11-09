@@ -27,18 +27,7 @@ import nyxlogo from "./images/nyx-logo.png";
 import Lottie from "react-lottie";
 import animationData from "./images/greeting.json";
 import Scrollspy from "react-scrollspy";
-import {
-  Card,
-  Nav,
-  Navbar,
-  NavDropdown,
-  Row,
-  Col,
-  Container,
-  Jumbotron,
-  Button,
-  ProgressBar
-} from "react-bootstrap";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
@@ -47,6 +36,7 @@ import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Headroom from "react-headroom";
+import Navbar from './Navbar.js'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const defaultOptions = {
@@ -79,6 +69,7 @@ function App() {
   return (
     <Router>
       <div className="App wrapper">
+ 
         <Content />
       </div>
     </Router>

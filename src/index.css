@@ -148,4 +148,10 @@ header .header-content .inner p {
   .page-1 {
     margin-top: 50px;
   }
+
+  .custom-bg {
+    height: 800px;
+  }
+  
+
 }

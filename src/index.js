@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './css/animate.css';
-
+import './css/device-mockups.css';
 import './css/style.css';
+import './css/style.default.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

@@ -35,15 +35,30 @@ import {  faPalette } from '@fortawesome/free-solid-svg-icons'
 import {  faPhotoVideo } from '@fortawesome/free-solid-svg-icons'
 import {  faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import Headroom from 'react-headroom'
+import NavBar from './Navbar.js'
+import bgheader from './images/slide-4.jpg'
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import JobsNow from './JobsNow.js'
+import JobsNow from './pages/JobsNow.js'
+import { Parallax, Background } from "react-parallax";
 
-
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
+const insideStyles = {
+  background: "white",
+  padding: 20,
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)"
+};
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -54,7 +69,7 @@ const defaultOptions = {
   }
 }
 
-
+const image1 =`${bgheader}`;
 
 const lottietitle = {
   backgroundColor: 'transparent '
@@ -80,40 +95,15 @@ function Main() {
 
 	  <div>
 
-
+     <Headroom disableInlineStyles={true} >
+  <NavBar />
+</Headroom>
 
 
 
   <body >	  
-
-  <Headroom disableInlineStyles={true} >
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">B</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home-section">Home</Nav.Link>
-      <Nav.Link href="#about-section">About</Nav.Link>
-      <Nav.Link href="#resume-section">Resume</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
-</Headroom>
-
-      <header id="first">
+	<Parallax className="custom-bg" strength={300}>
+         <header id="first">
       <section class="hero-wrap js-fullheight">
       <div class="overlay"></div>
         <div class="header-content"> <Lottie options={defaultOptions} width={'80vmin'} />
@@ -134,6 +124,14 @@ function Main() {
         </div>
       </section>
     </header>
+            <Background >
+                <img src={bgheader} style={{height:'100vh'}} />
+            </Background>
+        </Parallax>
+
+  
+   
+
 
 
     <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
@@ -188,7 +186,7 @@ function Main() {
         </div>
     		<div class="row">
 					<div class="col-md-4 text-center d-flex ">
-						<a href="#" class="services-1 shadow">
+						<div class="services-1 shadow">
 							<span class="icon">
 								<i class="flaticon-analysis"></i>
 							</span>
@@ -231,10 +229,10 @@ function Main() {
 	
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 							</div>
-						</a>
+						</div>
 					</div>
 					<div class="col-md-4 text-center d-flex ">
-						<a href="#" class="services-1 shadow">
+						<div class="services-1 shadow">
 							<span class="icon">
 								<i class="flaticon-flasks"></i>
 							</span>
@@ -255,10 +253,10 @@ function Main() {
     </div>
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 							</div>
-						</a>
+						</div>
 					</div>
 					<div class="col-md-4 text-center d-flex ">
-						<a href="#" class="services-1 shadow">
+						<div href="#" class="services-1 shadow">
 							<span class="icon">
 								<i class="flaticon-ideas"></i>
 							</span>
@@ -294,11 +292,11 @@ function Main() {
 
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 							</div>
-						</a>
+						</div>
 					</div>
 
 					<div class="col-md-4 text-center d-flex ">
-						<a href="#" class="services-1 shadow">
+						<div class="services-1 shadow">
 							<span class="icon">
 								<i class="flaticon-innovation"></i>
 							</span>
@@ -323,10 +321,10 @@ function Main() {
     </div>
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 							</div>
-						</a>
+						</div>
 					</div>
 					<div class="col-md-4 text-center d-flex ">
-						<a href="#" class="services-1 shadow">
+						<div class="services-1 shadow">
 							<span class="icon">
 								<i class="flaticon-ux-design"></i>
 							</span>
@@ -350,7 +348,7 @@ function Main() {
     </div>
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 							</div>
-						</a>
+						</div>
 					</div>
 					<div class="col-md-4 text-center d-flex ">
 						<a href="#" class="services-1 shadow">
