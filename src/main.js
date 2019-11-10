@@ -408,8 +408,9 @@ function Main() {
 					    	<div class="text pl-3">
 		    					<span class="date">AUG 2018 - OCT 2018</span>
 		    					<h2>Full Stack Web Development Program</h2>
-		    					<span class="position">Wyncode Academy</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="position">Wyncode Academy - Miami, FL</span>
+								<p>Certificate of compeletion certified by Florida Department of Education. </p>
+		    				
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex">
@@ -419,8 +420,8 @@ function Main() {
 					    	<div class="text pl-3">
 		    					<span class="date">2002-2004</span>
 		    					<h2>Video Production Internship</h2>
-		    					<span class="position">Stepstone Productions</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="position">Stepstone Productions - St. Louis, MO</span>
+		    					<p>Certificate of compeletion certified by St. Louis Angecy on Training and Employment. </p>
 		    				</div>
 	    				</div>
               <div class="resume-wrap d-flex">
@@ -447,8 +448,13 @@ function Main() {
 					    	<div class="text pl-3">
 		    					<span class="date">AUG 2019 - PRESENT</span>
 		    					<h2>Web Developer</h2>
-		    					<span class="position">1st Take Youth Film Program</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="position">1st Take Youth Film Program - Miami, Florida</span>
+		    					<p>
+								Web Developer for non-profit organization dedicated to teaching kids film production.
+								<li class='mt-2'>Responsibile for developing new full stack web application. </li>
+									<li class='mt-2'>Designing and coding custom HTML emails for clients/in-house newsletters and invitations for distribution through mailchimp and campaign monitor.</li>
+								
+						      </p>
 		    				</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ">
@@ -457,9 +463,14 @@ function Main() {
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">OCT 2017- AUG 2019</span>
-		    					<h2>Media Producer</h2>
+		    					<h2>Digital Media Producer</h2>
 		    					<span class="position">Florida Film House</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>
+								Digital Media Producer for commerical film production company specializing in creating video content for national business and brands.
+								<li class='mt-2'>Produced commericals and video interviews used for social media advertisments and marketing campaigns for the Urban Film Festival. </li>
+									<li class='mt-2'>Performed audio and video editing services in order to develop content from raw input into a polished, professional, and compelling final product.</li>
+								
+						      </p>
 		    				</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ">
