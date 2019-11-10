@@ -26,7 +26,7 @@ const defaultOptions = {
 
 
 
-function JobsNow() {
+function Nyx() {
   return (
  
 
@@ -83,7 +83,7 @@ function JobsNow() {
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
-              <h2 class="hero-heading">JOBS NOW</h2>
+              <h2 class="hero-heading">NYX NEWS</h2>
               <p class="lead mt-5 font-weight-light">With ShowTrackr you can track your favorite TV shows automatically, so you never loose track of your TV shows ever again. 🍿</p>
            
             </div>
@@ -328,4 +328,4 @@ function JobsNow() {
   );
 }
 
-export default JobsNow;
+export default Nyx;

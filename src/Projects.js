@@ -114,7 +114,7 @@ export default function MyTabs(props) {
                     style={{
                       backgroundImage: `url(${jobsnow})`,
                       backgroundColor: "blue",
-                      backgroundSize:'70%'
+                      backgroundSize: "70%"
                     }}
                   >
                     <div class="overlay"></div>
@@ -137,15 +137,17 @@ export default function MyTabs(props) {
                 <div class="col-md-6 lg-4 p-1">
                   <div
                     class="project img d-flex justify-content-center align-items-center"
-                    style={{ backgroundImage: `url(${nyxlogo})`, backgroundSize:'100%',
-                    backgroundColor: "black",
-                  }}
+                    style={{
+                      backgroundImage: `url(${nyxlogo})`,
+                      backgroundSize: "100%",
+                      backgroundColor: "black"
+                    }}
                   >
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
                       <span>
                         <h3>
-                          <Link to="/jobsnow">
+                          <Link to="/nyxnews">
                             <img src={nyxlogo} width={200} />
                           </Link>
                         </h3>

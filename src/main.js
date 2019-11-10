@@ -107,7 +107,26 @@ function Main() {
          <header id="first">
 
       <section class="hero-wrap js-fullheight">
-      <div class="overlay"></div><NavBar />
+      <div class="overlay"></div>
+	  
+      <Headroom disableInlineStyles={true} >
+  <Navbar class="navbar" collapseOnSelect expand="lg">
+  <Navbar.Brand href="#home">B</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="/"> BACK</Nav.Link>
+	  <Nav.Link href="/"> BACK</Nav.Link>
+	  <Nav.Link href="/"> BACK</Nav.Link>
+	  <Nav.Link href="/"> BACK</Nav.Link>
+  
+    </Nav>
+    
+  </Navbar.Collapse>
+</Navbar>
+</Headroom>
+
+
         <div class="header-content"> <Lottie options={defaultOptions} width={'80vmin'} />
             <div class="inner">
             
