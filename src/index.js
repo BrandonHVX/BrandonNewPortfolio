@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './css/animate.css';
 import './css/device-mockups.css';
 import './css/style.css';
 import './css/style.default.css';
