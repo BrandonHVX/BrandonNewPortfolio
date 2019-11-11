@@ -1,31 +1,31 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Projects from "./Projects.js";
-import ae from "./images/ae.svg";
-import ps from "./images/ps.svg";
-import ai from "./images/ai.svg";
-import xd from "./images/xd.svg";
-import pr from "./images/Pr.svg";
-import rails from "./images/rails.svg";
-import sass from "./images/sass.svg";
-import node from "./images/node.svg";
-import slack from "./images/slack.svg";
-import git from "./images/git.svg";
-import npm from "./images/npm.png";
-import vue from "./images/vuejs.svg";
-import js from "./images/js.svg";
-import ruby from "./images/ruby.png";
-import reactsvg from "./images/react.svg";
-import html5 from "./images/html5.svg";
-import projectpic from "./images/work-1.jpg";
-import bootstrap from "./images/bootstrap.svg";
-import about from "./images/about.jpg";
-import brandonpic from "./images/BrandonPic.jpg";
-import nyxlogo from "./images/nyx-logo.png";
-import Lottie from "react-lottie";
-import animationData from "./images/greeting.json";
-import Scrollspy from "react-scrollspy";
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import Projects from './Projects.js'
+import ae from './images/ae.svg'
+import ps from './images/ps.svg'
+import ai from './images/ai.svg'
+import xd from './images/xd.svg'
+import pr from './images/Pr.svg'
+import rails from './images/rails.svg'
+import sass from './images/sass.svg'
+import node from './images/node.svg'
+import slack from './images/slack.svg'
+import git from './images/git.svg'
+import npm from './images/npm.png'
+import vue from './images/vuejs.svg'
+import js from './images/js.svg'
+import ruby from './images/ruby.png'
+import reactsvg from './images/react.svg'
+import html5 from './images/html5.svg'
+import projectpic from './images/work-1.jpg'
+import bootstrap from './images/bootstrap.svg'
+import about from './images/about.jpg'
+import brandonpic from './images/BrandonPic.jpg'
+import nyxlogo from './images/nyx-logo.png'
+import Lottie from 'react-lottie'
+import animationData from './images/greeting.json'
+import Scrollspy from 'react-scrollspy'
 import {
   Card,
   Nav,
@@ -37,61 +37,61 @@ import {
   Jumbotron,
   Button,
   ProgressBar
-} from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faFilm } from "@fortawesome/free-solid-svg-icons";
-import { faPalette } from "@fortawesome/free-solid-svg-icons";
-import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import Headroom from "react-headroom";
-import NavBar from "./Navbar.js";
-import bgheader from "./images/slide-4.jpg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import JobsNow from "./pages/JobsNow.js";
-import { Parallax, Background } from "react-parallax";
+} from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faFilm } from '@fortawesome/free-solid-svg-icons'
+import { faPalette } from '@fortawesome/free-solid-svg-icons'
+import { faPhotoVideo } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import Headroom from 'react-headroom'
+import NavBar from './Navbar.js'
+import bgheader from './images/slide-4.jpg'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import JobsNow from './pages/JobsNow.js'
+import { Parallax, Background } from 'react-parallax'
 
 const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-};
+  fontFamily: 'sans-serif',
+  textAlign: 'center'
+}
 const insideStyles = {
-  background: "white",
+  background: 'white',
   padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%,-50%)"
-};
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%,-50%)'
+}
 const defaultOptions = {
   loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: ""
+    preserveAspectRatio: ''
   }
-};
+}
 
-const image1 = `${bgheader}`;
+const image1 = `${bgheader}`
 
 const lottietitle = {
-  backgroundColor: "transparent "
-};
+  backgroundColor: 'transparent '
+}
 
 const text = {
-  fontSize: "12px",
-  marginTop: "20px"
-};
+  fontSize: '12px',
+  marginTop: '20px'
+}
 
 const col = {
-  marginTop: "20px"
-};
+  marginTop: '20px'
+}
 
 const jumbo = {
-  backgroundColor: "transparent "
-};
+  backgroundColor: 'transparent '
+}
 
 function Main() {
   return (
@@ -118,8 +118,8 @@ function Main() {
               </Headroom>
 
               <div class="header-content">
-                {" "}
-                <Lottie options={defaultOptions} width={"80vmin"} />
+                {' '}
+                <Lottie options={defaultOptions} width={'80vmin'} />
                 <div class="inner">
                   <p>
                     I'm a software engineer in frontend and backend development
@@ -137,7 +137,7 @@ function Main() {
             </section>
           </header>
           <Background>
-            <img src={bgheader} style={{ height: "110vh" }} />
+            <img src={bgheader} style={{ height: '110vh' }} />
           </Background>
         </Parallax>
 
@@ -154,10 +154,10 @@ function Main() {
                     class="img d-flex align-self-stretch align-items-center"
                     style={{
                       backgroundImage: `url(${brandonpic})`,
-                      borderRadius: "90%",
-                      width: "300px",
-                      height: "300px",
-                      margin: "30px"
+                      borderRadius: '90%',
+                      width: '300px',
+                      height: '300px',
+                      margin: '30px'
                     }}
                   ></div>
                 </div>
@@ -177,11 +177,11 @@ function Main() {
                         <span>Name:</span> <span>Ronaldo Fredrickson</span>
                       </li>
                       <li class="d-flex">
-                        <span>Date of birth:</span>{" "}
+                        <span>Date of birth:</span>{' '}
                         <span>November 28, 1989</span>
                       </li>
                       <li class="d-flex">
-                        <span>Address:</span>{" "}
+                        <span>Address:</span>{' '}
                         <span>San Francisco CA 97987 USA</span>
                       </li>
                       <li class="d-flex">
@@ -437,7 +437,7 @@ function Main() {
                       <span class="position">Wyncode Academy - Miami, FL</span>
                       <p>
                         Certificate of compeletion certified by Florida
-                        Department of Education.{" "}
+                        Department of Education.{' '}
                       </p>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ function Main() {
                       </span>
                       <p>
                         Certificate of compeletion certified by St. Louis Agency
-                        on Training and Employment.{" "}
+                        on Training and Employment.{' '}
                       </p>
                     </div>
                   </div>
@@ -490,18 +490,18 @@ function Main() {
                       <p>
                         Web Developer for non-profit organization dedicated to
                         teaching kids film production.
-                        <li class="mt-2">
-                          Responsibile for development of new full stack web
-                          application using MongoDB, Express, React and Node to
-                          register new applicants and share program related
-                          information.{" "}
-                        </li>
-                        <li class="mt-2">
-                          Designing and coding custom HTML emails for
-                          clients/in-house newsletters and invitations for
-                          distribution through mailchimp and campaign monitor.
-                        </li>
                       </p>
+                      <li class="mt-2">
+                        Responsibile for development of new full stack web
+                        application using MongoDB, Express, React and Node to
+                        register new applicants and share program related
+                        information.{' '}
+                      </li>
+                      <li class="mt-2">
+                        Designing and coding custom HTML emails for
+                        clients/in-house newsletters and invitations for
+                        distribution through mailchimp and campaign monitor.
+                      </li>
                     </div>
                   </div>
                   <div class="resume-wrap d-flex">
@@ -517,18 +517,18 @@ function Main() {
                       <p>
                         Digital Media Producer for commerical film production
                         company specializing in creating video content for
-                        national business and brands.
-                        <li class="mt-2">
-                          Produced commericals and video interviews used for
-                          social media advertisments and marketing campaigns for
-                          the Urban Film Festival.{" "}
-                        </li>
-                        <li class="mt-2">
-                          Performed audio and video editing services in order to
-                          develop content from raw input into a polished,
-                          professional, and compelling final product.
-                        </li>
+                        national businesses and brands.
                       </p>
+                      <li class="mt-2">
+                        Produced commericals and video interviews used for
+                        social media advertisments and marketing campaigns for
+                        the Urban Film Festival.{' '}
+                      </li>
+                      <li class="mt-2">
+                        Performed audio and video editing services in order to
+                        develop content from raw input into a polished,
+                        professional, and compelling final product.
+                      </li>
                     </div>
                   </div>
                   <div class="resume-wrap d-flex ">
@@ -569,23 +569,27 @@ function Main() {
                       <h2>Freelance Multimedia Artist</h2>
                       <span class="position">Independent Contractor</span>
                       <h6>Atlanta, GA / Miami, FL</h6>
+
                       <p>
-                        <li>
-                          Communicated effectively with clients to develop
-                          custom print advertisements and visual marketing
-                          material.
-                        </li>
-                        <li>
-                          Projects included logos, flyers, brochures, page
-                          layouts and video commericial and interviews for small
-                          amd local businesses.
-                        </li>
-                        <li>
-                          Maintained management skills coupled with my customer
-                          service skills, for increased retention rate of
-                          clients.
-                        </li>
+                        Freelance Media artist working with business
+                        professionals, small businesses and local brands
+                        including lawyers, real estate agents, event promoters,
+                        restaurants and local radio stations.
                       </p>
+                      <li class="mt-2">
+                        Communicated effectively with clients to develop custom
+                        print advertisements and visual marketing material.
+                      </li>
+                      <li class="mt-2">
+                        Projects included logos, flyers, business cards,
+                        brochures, website banners, page layouts and video
+                        commericial and interviews for small amd local
+                        businesses.
+                      </li>
+                      <li class="mt-2">
+                        Maintained management skills coupled with my customer
+                        service skills, for increased retention rate of clients.
+                      </li>
                     </div>
                   </div>
                   <div class="resume-wrap d-flex ">
@@ -605,21 +609,20 @@ function Main() {
                         Marketing Assistant for popluar roller skating rink
                         known for hosting birthday parties, live events and
                         various family related activities.
-                        <li class="mt-2">
-                          Assisted in planning, designing and distribution of
-                          marketing materials including flyers, posters and
-                          brochures for all events and programs.
-                        </li>
-                        <li class="mt-2">
-                          Created weekley datebase of attendees used for survys
-                          and marketing reserch.
-                        </li>
-                        Provided general administrative and organizational
-                        support; such as faxing documents to clients, copying,
-                        filing, responding to emails, answering directed calls
-                        and ordering products and services related to specific
-                        events.
                       </p>
+                      <li class="mt-2">
+                        Assisted in planning, designing and distribution of
+                        marketing materials including flyers, posters and
+                        brochures for all events and programs.
+                      </li>
+                      <li class="mt-2">
+                        Created weekly database of attendees used for surveys
+                        and marketing research.
+                      </li>
+                      Provided general administrative and organizational
+                      support; such as faxing documents to clients, copying,
+                      filing, responding to emails, answering directed calls and
+                      ordering products and services related to specific events.
                     </div>
                   </div>
 
@@ -642,671 +645,90 @@ function Main() {
                     </div>
                   </div>
                 </div>
-
                 <div id="page-3" class="page three">
-                  <h2 class="heading">Expertise</h2>
-
-                  <div class="row">
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
+                  <h2 class="heading">Skills</h2>
+                  <div>
+                    <h6 style={styles}>Coding</h6>
+                    <div class="row">
+                      {' '}
+                      <div class="col-md-6 ">
+                        {' '}
+                        <div class="progress-wrap">
+                          <h3>HTML/CSS</h3>
+                          <ProgressBar now={80} label={'80%'} />
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>JavaScript</h3>
+                          <ProgressBar now={73} label={'73%'} />
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>Bootstrap</h3>
+                          <ProgressBar now={80} label={'80%'} />
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>React.Js</h3>
+                          <ProgressBar now={70} label={'70%'} />
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>Gatsby.Js</h3>
+                          <ProgressBar now={78} label={'78%'} />
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>Ruby on Rails</h3>
+                          <ProgressBar now={67} label={'67%'} />
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="resume-wrap d-flex ">
-                        <div class="text ">
-                          <span class="date">2014-2015</span>
-                          <h2>Top 10 Web Developer</h2>
-                          <span class="position">Cambridge University</span>
-                          <p>
-                            A small river named Duden flows by their place and
-                            supplies it with the necessary regelialia. It is a
-                            paradisematic country, in which roasted parts of
-                            sentences fly into your mouth.
-                          </p>
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>Node.Js</h3>
+                          <ProgressBar now={70} label={'75%'} />
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div id="page-4" class="page four">
-                  <h2 class="heading">Awards</h2>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2014-2015</span>
-                      <h2>Top 10 Web Developer</h2>
-                      <span class="position">Cambridge University</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2014-2015</span>
-                      <h2>Top 5 LeaderShip Exellence Winner</h2>
-                      <span class="position">Cambridge University</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2014-2015</span>
-                      <h2>Top 4 Web Tester</h2>
-                      <span class="position">Cambridge University</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2014-2015</span>
-                      <h2>Art &amp; Creative Director</h2>
-                      <span class="position">Cambridge University</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="ftco-section ftco-project" id="projects-section">
-          <div class="container-fluid px-md-0">
-            <div class="row no-gutters justify-content-center pb-5">
-              <div class="col-md-12 heading-section text-center ">
-                <h1 class="big big-2">Projects</h1>
-                <h2 class="mb-4">Portfolio</h2>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia
-                </p>
-              </div>
-            </div>
-            <Projects />
-          </div>
-        </section>
-
-        <section
-          class="ftco-section contact-section ftco-no-pb"
-          id="contact-section"
-        >
-          <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-              <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Contact</h1>
-                <h2 class="mb-4">Contact Me</h2>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia
-                </p>
-              </div>
-            </div>
-
-            <div class="row d-flex contact-info mb-5">
-              <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box text-center p-4 shadow">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="icon-map-signs"></span>
-                  </div>
-                  <div>
-                    <h3 class="mb-4">Address</h3>
-                    <p>198 West 21th Street, Suite 721 New York NY 10016</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box text-center p-4 shadow">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="icon-phone2"></span>
-                  </div>
-                  <div>
-                    <h3 class="mb-4">Contact Number</h3>
-                    <p>
-                      <a href="tel://1234567920">+ 1235 2355 98</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box text-center p-4 shadow">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="icon-paper-plane"></span>
-                  </div>
-                  <div>
-                    <h3 class="mb-4">Email Address</h3>
-                    <p>
-                      <a href="mailto:info@yoursite.com">info@yoursite.com</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box text-center p-4 shadow">
-                  <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="icon-globe"></span>
-                  </div>
-                  <div>
-                    <h3 class="mb-4">Website</h3>
-                    <p>
-                      <a href="#">yoursite.com</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="ftco-section" id="services-section">
-          <div class="container-fluid px-md-5">
-            <div class="row">
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-analysis"></i>
-                  </span>
-
-                  <div class="desc">
-                    <h3 class="mb-5">Web Development</h3>
-
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={js} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={reactsvg} width={40} alt="" />
-                          </span>
-
-                          <span>
-                            <img src={node} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={npm} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ruby} width={35} alt="" />
-                          </span>
-                          <span>
-                            <img src={rails} width={35} alt="" />
-                          </span>
-                        </p>
+                  <div class="mt-5">
+                    <h6>Creative Skills</h6>
+                    <div class="row">
+                      {' '}
+                      <div class="col-md-6 ">
+                        {' '}
+                        <div class="progress-wrap">
+                          <h3> Adobe Photoshop</h3>
+                          <ProgressBar now={95} label={'95%'} />
+                        </div>
                       </div>
-                    </div>
-
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-flasks"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Video Production</h3>
-
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={pr} width={40} alt="" />
-                          </span>
-                        </p>
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3> Adobe Illustrator</h3>
+                          <ProgressBar now={90} label={'90%'} />
+                        </div>
                       </div>
-                    </div>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <div href="#" class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-ideas"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Web Design</h3>
-
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={html5} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={reactsvg} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={bootstrap} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={sass} width={40} alt="" />
-                          </span>
-                        </p>
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>Adobe XD</h3>
+                          <ProgressBar now={78} label={'78%'} />
+                        </div>
                       </div>
-                    </div>
-
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-innovation"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Graphic Design</h3>
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={ps} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ai} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={xd} width={40} alt="" />
-                          </span>
-                        </p>
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>Adobe Premeire Pro</h3>
+                          <ProgressBar now={99} label={'99%'} />
+                        </div>
                       </div>
-                    </div>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-ux-design"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Motion Graphics</h3>
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={ps} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ai} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ae} width={40} alt="" />
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <a href="#" class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-idea"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-4">Photography</h3>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-          <div class="container">
-            <div class="col-md-12 heading-section text-center ">
-              <h1 class="big big-2">Resume</h1>
-              <h2 class="mb-4">Resume</h2>
-              <p> </p>
-            </div>
-            <div class="row">
-              <div class="col-sm-3 md-3">
-                <nav id="navi">
-                  <ul>
-                    <li>
-                      <a href="#page-1">Education</a>
-                    </li>
-                    <li>
-                      <a href="#page-2">Experience</a>
-                    </li>
-                    <li>
-                      <a href="#page-3">Skills</a>
-                    </li>
-                    <li>
-                      <a href="#page-4">Expertise</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="col-md-9">
-                <div id="page-1" class="page">
-                  <h2 class="heading">Education</h2>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faGraduationCap} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">AUG 2018 - OCT 2018</span>
-                      <h2>Full Stack Web Development Program</h2>
-                      <span class="position">Wyncode Academy</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faGraduationCap} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2002-2004</span>
-                      <h2>Video Production Internship</h2>
-                      <span class="position">Stepstone Productions</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faGraduationCap} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2002-2004</span>
-                      <h2>A.S. Graphic Design</h2>
-                      <span class="position">St. Louis Community College</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="page-2" class="page two">
-                  <h2 class="heading">Experience</h2>
-                  <div class="resume-wrap d-flex">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faCode} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">AUG 2019 - PRESENT</span>
-                      <h2>Web Developer</h2>
-                      <span class="position">1st Take Youth Film Program</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faPhotoVideo} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">OCT 2017- AUG 2019</span>
-                      <h2>Media Producer</h2>
-                      <span class="position">Florida Film House</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faFilm} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">SEPT 2010-2016</span>
-                      <h2>Vidographer & Editor</h2>
-                      <span class="position">Rum Bum Film and HD Studios</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faPalette} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2007-2012</span>
-                      <h2>Freelance Graphic Artist</h2>
-                      <span class="position">Gines Multimedia Services</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faBriefcase} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2004-2006</span>
-                      <h2>Marketing Assistant</h2>
-                      <span class="position">
-                        The Palace Family and Entertainment Center
-                      </span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faBriefcase} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2003-2004</span>
-                      <h2>Video Production Intership</h2>
-                      <span class="position">Stepstone Productions</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faBriefcase} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2003-2004</span>
-                      <h2>Promotions Internship</h2>
-                      <span class="position">100.3 The Beat</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="page-3" class="page three">
-                  <h2 class="heading">Skills</h2>
-
-                  <div class="row">
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
-                      </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
-                      </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
-                      </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
-                      </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
-                      </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="progress-wrap">
-                        <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={"60%"} />
-                      </div>
-                    </div>
-                    <div class="col-md-6 ">
-                      <div class="resume-wrap d-flex ">
-                        <div class="text ">
-                          <span class="date">2014-2015</span>
-                          <h2>Top 10 Web Developer</h2>
-                          <span class="position">Cambridge University</span>
-                          <p>
-                            A small river named Duden flows by their place and
-                            supplies it with the necessary regelialia. It is a
-                            paradisematic country, in which roasted parts of
-                            sentences fly into your mouth.
-                          </p>
+                      <div class="col-md-6 ">
+                        <div class="progress-wrap">
+                          <h3>Adobe After Effects</h3>
+                          <ProgressBar now={88} label={'88%'} />
                         </div>
                       </div>
                     </div>
@@ -1320,7 +742,7 @@ function Main() {
                         <div class="text ">
                           <span class="flaticon-ideas">
                             <FontAwesomeIcon icon={faBriefcase} />
-                          </span>{" "}
+                          </span>{' '}
                           Experienced in full stack web development, UX/UI
                           design for web applications, video production and
                           graphic design for marketing campaigns
@@ -1356,9 +778,9 @@ function Main() {
                         <div class="text ">
                           <p>
                             <span class="position">
-                              {" "}
-                              Comprehensive understanding and experience{" "}
-                            </span>{" "}
+                              {' '}
+                              Comprehensive understanding and experience{' '}
+                            </span>{' '}
                             in full stack web development, UX/UI design for web
                             applications, video production and graphic design
                             for marketing campaigns
@@ -1546,8 +968,8 @@ function Main() {
                 <p>
                   Copyright &copy;
                   <script>document.write(new Date().getFullYear());</script> All
-                  rights reserved | This template is made with{" "}
-                  <i class="icon-heart color-danger" aria-hidden="true"></i> by{" "}
+                  rights reserved | This template is made with{' '}
+                  <i class="icon-heart color-danger" aria-hidden="true"></i> by{' '}
                   <a href="https://colorlib.com" target="_blank">
                     Colorlib
                   </a>
@@ -1558,7 +980,7 @@ function Main() {
         </footer>
       </body>
     </div>
-  );
+  )
 }
 
-export default Main;
+export default Main
