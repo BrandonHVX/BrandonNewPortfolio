@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import '../App.css'
+import "../App.css";
 import {
   Card,
   Nav,
@@ -12,25 +12,25 @@ import {
   Jumbotron,
   Button,
   ProgressBar
-} from 'react-bootstrap'
-import Lottie from 'react-lottie'
-import animationData from '../images/greeting.json'
-import imacscreen from '../images/imac-screen.jpg'
-import iphone from '../images/portrait_black.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
-import Headroom from 'react-headroom'
-import NavBar from '../Navbar.js'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+} from "react-bootstrap";
+import Lottie from "react-lottie";
+import animationData from "../images/greeting.json";
+import imacscreen from "../images/imac-screen.jpg";
+import iphone from "../images/portrait_black.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import Headroom from "react-headroom";
+import NavBar from "../Navbar.js";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: ''
+    preserveAspectRatio: ""
   }
-}
+};
 
 function JobsNow() {
   return (
@@ -111,9 +111,8 @@ function JobsNow() {
                 <div class="col-lg-6">
                   <h2 class="hero-heading">JOBS NOW</h2>
                   <p class="lead mt-5 font-weight-light">
-                    With ShowTrackr you can track your favorite TV shows
-                    automatically, so you never loose track of your TV shows
-                    ever again. 🍿
+                    Career social networking design to connect users in search
+                    of their next career.
                   </p>
                 </div>
                 <div class="col-lg-6 d-flex d-lg-block">
@@ -139,8 +138,8 @@ function JobsNow() {
                   <div class="col-md-6 mb-2">
                     <div>
                       <h4>
-                        {' '}
-                        <FontAwesomeIcon icon={faCheckCircle} /> {''}Sign Up/
+                        {" "}
+                        <FontAwesomeIcon icon={faCheckCircle} /> {""}Sign Up/
                         Login In
                       </h4>
                     </div>
@@ -148,8 +147,8 @@ function JobsNow() {
                   <div class="col-md-6 mb-2 ">
                     <div>
                       <h4>
-                        {' '}
-                        <FontAwesomeIcon icon={faCheckCircle} /> {''}Create and
+                        {" "}
+                        <FontAwesomeIcon icon={faCheckCircle} /> {""}Create and
                         Update Profile
                       </h4>
                     </div>
@@ -157,16 +156,16 @@ function JobsNow() {
                   <div class="col-md-6 mb-2">
                     <div>
                       <h4>
-                        {' '}
-                        <FontAwesomeIcon icon={faCheckCircle} /> {''}Make a Post
+                        {" "}
+                        <FontAwesomeIcon icon={faCheckCircle} /> {""}Make a Post
                       </h4>
                     </div>
                   </div>
                   <div class="col-md-6 mb-2">
                     <div>
                       <h4>
-                        {' '}
-                        <FontAwesomeIcon icon={faCheckCircle} /> {''}View all
+                        {" "}
+                        <FontAwesomeIcon icon={faCheckCircle} /> {""}View all
                         users profile
                       </h4>
                     </div>
@@ -174,8 +173,8 @@ function JobsNow() {
                   <div class="col-md-6 mb-2">
                     <div>
                       <h4>
-                        {' '}
-                        <FontAwesomeIcon icon={faCheckCircle} /> {''}Sign Up/
+                        {" "}
+                        <FontAwesomeIcon icon={faCheckCircle} /> {""}Sign Up/
                         Login In
                       </h4>
                     </div>
@@ -185,18 +184,91 @@ function JobsNow() {
             </div>
           </section>
 
-          <section class="gallery" style={{ backgroundColor: 'red' }}>
+          <section class="gallery" style={{ backgroundColor: "red" }}>
             <div class="container text-center">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <h2 class="hero-heading">Track your shows automatically</h2>
-                  <p class="lead mt-5 font-weight-light">
-                    With ShowTrackr you can track your favorite TV shows
-                    automatically, so you never loose track of your TV shows
-                    ever again. 🍿
-                  </p>
+              <h3>Technology</h3>
+              <div class="row align-items-center mt-5">
+                <div class="col-lg-4">
+                  <div class="features-item mb-5 mb-lg-0">
+                    <div class="gradient-icon gradient-1">
+                      <i class="icon ion-ios-play"></i>
+                    </div>
+                    <h3 class="h5">MongoDB</h3>
+                    <p>
+                      Track your favorite shows automatically without switching
+                      between apps.
+                    </p>
+                    <a href="#" class="features-link">
+                      Learn more
+                      <i class="icon ion-ios-arrow-forward ml-2"></i>
+                    </a>
+                  </div>
                 </div>
-                <div class="col-lg-6 d-flex d-lg-block">
+                <div class="col-lg-4">
+                  <div class="features-item mb-5 mb-lg-0">
+                    <div class="gradient-icon gradient-1">
+                      <i class="icon ion-ios-play"></i>
+                    </div>
+                    <h3 class="h5"></h3>
+                    <p>
+                      Track your favorite shows automatically without switching
+                      between apps.
+                    </p>
+                    <a href="#" class="features-link">
+                      Learn more
+                      <i class="icon ion-ios-arrow-forward ml-2"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="features-item mb-5 mb-lg-0">
+                    <div class="gradient-icon gradient-1">
+                      <i class="icon ion-ios-play"></i>
+                    </div>
+                    <h3 class="h5">MongoDB</h3>
+                    <p>
+                      Track your favorite shows automatically without switching
+                      between apps.
+                    </p>
+                    <a href="#" class="features-link">
+                      Learn more
+                      <i class="icon ion-ios-arrow-forward ml-2"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="features-item mb-5 mb-lg-0">
+                    <div class="gradient-icon gradient-1">
+                      <i class="icon ion-ios-play"></i>
+                    </div>
+                    <h3 class="h5">MongoDB</h3>
+                    <p>
+                      Track your favorite shows automatically without switching
+                      between apps.
+                    </p>
+                    <a href="#" class="features-link">
+                      Learn more
+                      <i class="icon ion-ios-arrow-forward ml-2"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="features-item mb-5 mb-lg-0">
+                    <div class="gradient-icon gradient-1">
+                      <i class="icon ion-ios-play"></i>
+                    </div>
+                    <h3 class="h5">MongoDB</h3>
+                    <p>
+                      Track your favorite shows automatically without switching
+                      between apps.
+                    </p>
+                    <a href="#" class="features-link">
+                      Learn more
+                      <i class="icon ion-ios-arrow-forward ml-2"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 d-flex d-lg-block">
                   <div class="device-wrapper mx-auto">
                     <div
                       data-device="iPhone7"
@@ -217,9 +289,7 @@ function JobsNow() {
           <section class="features">
             <div class="container">
               <div id="page-3" class="page three">
-                <h2 class="heading" style={{ textAlign: 'center' }}>
-                  Technology
-                </h2>
+                <h6 style={{ textAlign: "center" }}>Technology</h6>
 
                 <div class="row mt-5 text-center">
                   <div class="col-lg-4">
@@ -323,7 +393,7 @@ function JobsNow() {
             </div>
           </section>
 
-          <section class="gallery" style={{ backgroundColor: 'red' }}>
+          <section class="gallery" style={{ backgroundColor: "red" }}>
             <div class="container text-center">
               <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -496,8 +566,8 @@ function JobsNow() {
                 <p>
                   Copyright &copy;
                   <script>document.write(new Date().getFullYear());</script> All
-                  rights reserved | This template is made with{' '}
-                  <i class="icon-heart color-danger" aria-hidden="true"></i> by{' '}
+                  rights reserved | This template is made with{" "}
+                  <i class="icon-heart color-danger" aria-hidden="true"></i> by{" "}
                   <a href="https://colorlib.com" target="_blank">
                     Colorlib
                   </a>
@@ -508,7 +578,7 @@ function JobsNow() {
         </footer>
       </body>
     </div>
-  )
+  );
 }
 
-export default JobsNow
+export default JobsNow;
