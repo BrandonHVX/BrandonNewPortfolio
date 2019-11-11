@@ -1,31 +1,31 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import Projects from './Projects.js'
-import ae from './images/ae.svg'
-import ps from './images/ps.svg'
-import ai from './images/ai.svg'
-import xd from './images/xd.svg'
-import pr from './images/Pr.svg'
-import rails from './images/rails.svg'
-import sass from './images/sass.svg'
-import node from './images/node.svg'
-import slack from './images/slack.svg'
-import git from './images/git.svg'
-import npm from './images/npm.png'
-import vue from './images/vuejs.svg'
-import js from './images/js.svg'
-import ruby from './images/ruby.png'
-import reactsvg from './images/react.svg'
-import html5 from './images/html5.svg'
-import projectpic from './images/work-1.jpg'
-import bootstrap from './images/bootstrap.svg'
-import about from './images/about.jpg'
-import brandonpic from './images/BrandonPic.jpg'
-import nyxlogo from './images/nyx-logo.png'
-import Lottie from 'react-lottie'
-import animationData from './images/greeting.json'
-import Scrollspy from 'react-scrollspy'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Projects from "./Projects.js";
+import ae from "./images/ae.svg";
+import ps from "./images/ps.svg";
+import ai from "./images/ai.svg";
+import xd from "./images/xd.svg";
+import pr from "./images/Pr.svg";
+import rails from "./images/rails.svg";
+import sass from "./images/sass.svg";
+import node from "./images/node.svg";
+import slack from "./images/slack.svg";
+import git from "./images/git.svg";
+import npm from "./images/npm.png";
+import vue from "./images/vuejs.svg";
+import js from "./images/js.svg";
+import ruby from "./images/ruby.png";
+import reactsvg from "./images/react.svg";
+import html5 from "./images/html5.svg";
+import projectpic from "./images/work-1.jpg";
+import bootstrap from "./images/bootstrap.svg";
+import about from "./images/about.jpg";
+import brandonpic from "./images/BrandonPic.jpg";
+import nyxlogo from "./images/nyx-logo.png";
+import Lottie from "react-lottie";
+import animationData from "./images/greeting.json";
+import Scrollspy from "react-scrollspy";
 import {
   Card,
   Nav,
@@ -37,61 +37,61 @@ import {
   Jumbotron,
   Button,
   ProgressBar
-} from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
-import { faFilm } from '@fortawesome/free-solid-svg-icons'
-import { faPalette } from '@fortawesome/free-solid-svg-icons'
-import { faPhotoVideo } from '@fortawesome/free-solid-svg-icons'
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
-import Headroom from 'react-headroom'
-import NavBar from './Navbar.js'
-import bgheader from './images/slide-4.jpg'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import JobsNow from './pages/JobsNow.js'
-import { Parallax, Background } from 'react-parallax'
+} from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
+import { faPalette } from "@fortawesome/free-solid-svg-icons";
+import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import Headroom from "react-headroom";
+import NavBar from "./Navbar.js";
+import bgheader from "./images/slide-4.jpg";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import JobsNow from "./pages/JobsNow.js";
+import { Parallax, Background } from "react-parallax";
 
 const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center'
-}
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
 const insideStyles = {
-  background: 'white',
+  background: "white",
   padding: 20,
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%,-50%)'
-}
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)"
+};
 const defaultOptions = {
   loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: ''
+    preserveAspectRatio: ""
   }
-}
+};
 
-const image1 = `${bgheader}`
+const image1 = `${bgheader}`;
 
 const lottietitle = {
-  backgroundColor: 'transparent '
-}
+  backgroundColor: "transparent "
+};
 
 const text = {
-  fontSize: '12px',
-  marginTop: '20px'
-}
+  fontSize: "12px",
+  marginTop: "20px"
+};
 
 const col = {
-  marginTop: '20px'
-}
+  marginTop: "20px"
+};
 
 const jumbo = {
-  backgroundColor: 'transparent '
-}
+  backgroundColor: "transparent "
+};
 
 function Main() {
   return (
@@ -118,8 +118,8 @@ function Main() {
               </Headroom>
 
               <div class="header-content">
-                {' '}
-                <Lottie options={defaultOptions} width={'80vmin'} />
+                {" "}
+                <Lottie options={defaultOptions} width={"80vmin"} />
                 <div class="inner">
                   <p>
                     I'm a software engineer in frontend and backend development
@@ -137,7 +137,7 @@ function Main() {
             </section>
           </header>
           <Background>
-            <img src={bgheader} style={{ height: '110vh' }} />
+            <img src={bgheader} style={{ height: "110vh" }} />
           </Background>
         </Parallax>
 
@@ -154,10 +154,10 @@ function Main() {
                     class="img d-flex align-self-stretch align-items-center"
                     style={{
                       backgroundImage: `url(${brandonpic})`,
-                      borderRadius: '90%',
-                      width: '300px',
-                      height: '300px',
-                      margin: '30px'
+                      borderRadius: "90%",
+                      width: "300px",
+                      height: "300px",
+                      margin: "30px"
                     }}
                   ></div>
                 </div>
@@ -177,11 +177,11 @@ function Main() {
                         <span>Name:</span> <span>Ronaldo Fredrickson</span>
                       </li>
                       <li class="d-flex">
-                        <span>Date of birth:</span>{' '}
+                        <span>Date of birth:</span>{" "}
                         <span>November 28, 1989</span>
                       </li>
                       <li class="d-flex">
-                        <span>Address:</span>{' '}
+                        <span>Address:</span>{" "}
                         <span>San Francisco CA 97987 USA</span>
                       </li>
                       <li class="d-flex">
@@ -437,7 +437,7 @@ function Main() {
                       <span class="position">Wyncode Academy - Miami, FL</span>
                       <p>
                         Certificate of compeletion certified by Florida
-                        Department of Education.{' '}
+                        Department of Education.{" "}
                       </p>
                     </div>
                   </div>
@@ -454,8 +454,8 @@ function Main() {
                         Stepstone Productions - St. Louis, MO
                       </span>
                       <p>
-                        Certificate of compeletion certified by St. Louis Angecy
-                        on Training and Employment.{' '}
+                        Certificate of compeletion certified by St. Louis Agency
+                        on Training and Employment.{" "}
                       </p>
                     </div>
                   </div>
@@ -467,14 +467,8 @@ function Main() {
                     </div>
                     <div class="text pl-3">
                       <span class="date">2002-2004</span>
-                      <h2>A.S. Graphic Design</h2>
+                      <h2>A.S. Mass Communication</h2>
                       <span class="position">St. Louis Community College</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -497,8 +491,10 @@ function Main() {
                         Web Developer for non-profit organization dedicated to
                         teaching kids film production.
                         <li class="mt-2">
-                          Responsibile for developing new full stack web
-                          application.{' '}
+                          Responsibile for development of new full stack web
+                          application using MongoDB, Express, React and Node to
+                          register new applicants and share program related
+                          information.{" "}
                         </li>
                         <li class="mt-2">
                           Designing and coding custom HTML emails for
@@ -508,7 +504,7 @@ function Main() {
                       </p>
                     </div>
                   </div>
-                  <div class="resume-wrap d-flex ">
+                  <div class="resume-wrap d-flex">
                     <div class="icon d-flex align-items-center justify-content-center">
                       <span class="flaticon-ideas">
                         <FontAwesomeIcon icon={faPhotoVideo} />
@@ -525,7 +521,7 @@ function Main() {
                         <li class="mt-2">
                           Produced commericals and video interviews used for
                           social media advertisments and marketing campaigns for
-                          the Urban Film Festival.{' '}
+                          the Urban Film Festival.{" "}
                         </li>
                         <li class="mt-2">
                           Performed audio and video editing services in order to
@@ -542,15 +538,24 @@ function Main() {
                       </span>
                     </div>
                     <div class="text pl-3">
-                      <span class="date">SEPT 2010-2016</span>
-                      <h2>Vidographer & Editor</h2>
+                      <span class="date">SEPT 2013-2016</span>
+                      <h2>Videographer & Editor</h2>
                       <span class="position">Rum Bum Film and HD Studios</span>
+                      <h6>Miami, Florida</h6>
                       <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
+                        Videographer & Editor for live shows, music videos,
+                        independent films, sporting events and documentries on
+                        over 500+ productions.
                       </p>
+
+                      <li class="mt-2">
+                        After Effects Editor for Fox Sports 3D experience at the
+                        2016 Daytona 500
+                      </li>
+                      <li class="mt-2">
+                        On-Stage videographer during live stream broadcast of
+                        the 2016 Three Points Music Festival in Miami, FL.
+                      </li>
                     </div>
                   </div>
                   <div class="resume-wrap d-flex ">
@@ -561,13 +566,25 @@ function Main() {
                     </div>
                     <div class="text pl-3">
                       <span class="date">2007-2012</span>
-                      <h2>Freelance Graphic Artist</h2>
-                      <span class="position">Gines Multimedia Services</span>
+                      <h2>Freelance Multimedia Artist</h2>
+                      <span class="position">Independent Contractor</span>
+                      <h6>Atlanta, GA / Miami, FL</h6>
                       <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
+                        <li>
+                          Communicated effectively with clients to develop
+                          custom print advertisements and visual marketing
+                          material.
+                        </li>
+                        <li>
+                          Projects included logos, flyers, brochures, page
+                          layouts and video commericial and interviews for small
+                          amd local businesses.
+                        </li>
+                        <li>
+                          Maintained management skills coupled with my customer
+                          service skills, for increased retention rate of
+                          clients.
+                        </li>
                       </p>
                     </div>
                   </div>
@@ -581,34 +598,31 @@ function Main() {
                       <span class="date">2004-2006</span>
                       <h2>Marketing Assistant</h2>
                       <span class="position">
-                        The Palace Family and Entertainment Center
+                        The Palace Skating Rink and Family Entertainment Center
                       </span>
+                      <h6>St. Louis, MO</h6>
                       <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
+                        Marketing Assistant for popluar roller skating rink
+                        known for hosting birthday parties, live events and
+                        various family related activities.
+                        <li class="mt-2">
+                          Assisted in planning, designing and distribution of
+                          marketing materials including flyers, posters and
+                          brochures for all events and programs.
+                        </li>
+                        <li class="mt-2">
+                          Created weekley datebase of attendees used for survys
+                          and marketing reserch.
+                        </li>
+                        Provided general administrative and organizational
+                        support; such as faxing documents to clients, copying,
+                        filing, responding to emails, answering directed calls
+                        and ordering products and services related to specific
+                        events.
                       </p>
                     </div>
                   </div>
-                  <div class="resume-wrap d-flex ">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="flaticon-ideas">
-                        <FontAwesomeIcon icon={faBriefcase} />
-                      </span>
-                    </div>
-                    <div class="text pl-3">
-                      <span class="date">2003-2004</span>
-                      <h2>Video Production Intership</h2>
-                      <span class="position">Stepstone Productions</span>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth.
-                      </p>
-                    </div>
-                  </div>
+
                   <div class="resume-wrap d-flex ">
                     <div class="icon d-flex align-items-center justify-content-center">
                       <span class="flaticon-ideas">
@@ -618,7 +632,7 @@ function Main() {
                     <div class="text pl-3">
                       <span class="date">2003-2004</span>
                       <h2>Promotions Internship</h2>
-                      <span class="position">100.3 The Beat</span>
+                      <span class="position">Clear Channel Communications</span>
                       <p>
                         A small river named Duden flows by their place and
                         supplies it with the necessary regelialia. It is a
@@ -636,37 +650,37 @@ function Main() {
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
@@ -1248,37 +1262,37 @@ function Main() {
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
                       <div class="progress-wrap">
                         <h3>Photoshop</h3>
-                        <ProgressBar now={60} label={'60%'} />
+                        <ProgressBar now={60} label={"60%"} />
                       </div>
                     </div>
                     <div class="col-md-6 ">
@@ -1306,7 +1320,7 @@ function Main() {
                         <div class="text ">
                           <span class="flaticon-ideas">
                             <FontAwesomeIcon icon={faBriefcase} />
-                          </span>{' '}
+                          </span>{" "}
                           Experienced in full stack web development, UX/UI
                           design for web applications, video production and
                           graphic design for marketing campaigns
@@ -1342,9 +1356,9 @@ function Main() {
                         <div class="text ">
                           <p>
                             <span class="position">
-                              {' '}
-                              Comprehensive understanding and experience{' '}
-                            </span>{' '}
+                              {" "}
+                              Comprehensive understanding and experience{" "}
+                            </span>{" "}
                             in full stack web development, UX/UI design for web
                             applications, video production and graphic design
                             for marketing campaigns
@@ -1532,8 +1546,8 @@ function Main() {
                 <p>
                   Copyright &copy;
                   <script>document.write(new Date().getFullYear());</script> All
-                  rights reserved | This template is made with{' '}
-                  <i class="icon-heart color-danger" aria-hidden="true"></i> by{' '}
+                  rights reserved | This template is made with{" "}
+                  <i class="icon-heart color-danger" aria-hidden="true"></i> by{" "}
                   <a href="https://colorlib.com" target="_blank">
                     Colorlib
                   </a>
@@ -1544,7 +1558,7 @@ function Main() {
         </footer>
       </body>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;
