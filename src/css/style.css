@@ -8587,6 +8587,17 @@ h1, h2, h3, h4, h5,
 
 
 
+            .project .overlay-video {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              content: ''
+              ;}
+
+         
+
   .project .overlay {
     position: absolute;
     top: 0;
@@ -8604,9 +8615,29 @@ h1, h2, h3, h4, h5,
     @media (max-width: 767.98px) {
       .project .overlay {
         opacity: .9;
-        background: #000000; } }
+        background: #0066ff;
+       
+    
+      }
+
+
+      .project .overlay-video {
+        opacity: .9;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%, rgba(29,129,253,1) 23%);
+        top: 100px;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        height: 250px;
+      }
+ 
+    
+      
+      }
   .project .text {
     max-width: 80%;
+
     z-index: 1;
     opacity: 0;
     -moz-transition: all 0.3s ease;
@@ -8624,20 +8655,34 @@ h1, h2, h3, h4, h5,
       letter-spacing: 2px;
       font-size: 12px;
       font-weight: 600; }
+
+
+      
     @media (max-width: 767.98px) {
       .project .text {
-        opacity: 1; }
+        opacity: 1; 
+      }
+
+    
+     
         .project .text span {
-          color: rgba(255, 255, 255, 0.8); } 
+          color: rgba(255, 255, 255, 0.8); 
+        } 
+        
+        
         }
         
 
+        @media (min-width: 767.98px) {
 
+        .project:hover .overlay-video, .project:focus  {
+          opacity: 1; 
+        background-color: #33ff00e0}
 
-
+        }
   .project:hover .overlay, .project:focus  {
     opacity: 1; 
-  background-color: #000000e0}
+  background-color: #ff0000e0}
   .project:hover .text, .project:focus  {
     opacity: 1; 
    }
