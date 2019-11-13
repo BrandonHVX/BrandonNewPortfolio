@@ -9,22 +9,22 @@ import {
 import Main from './main'
 import JobsNow from './pages/JobsNow'
 import Nyx from './pages/Nyx'
+import Scroll from './Scroll.js'
 
 export default props => (
   <div>
     {' '}
     <div className="content">
       {' '}
-      {/* <NavBar toggle={props.toggle} /> */}
-      <Router>
-        <Switch>
+      {/* <NavBar toggle={props.toggle} /> */}{' '}
+      <Switch>
+        <Scroll>
           <Route exact path="/" component={() => <Main />} />
           <Route exact path="/jobsnow" component={() => <JobsNow />} />
           <Route exact path="/nyxnews" component={() => <Nyx />} />
-
-          {/* projects pages */}
-        </Switch>
-      </Router>
+        </Scroll>
+        {/* projects pages */}
+      </Switch>
     </div>
   </div>
 )

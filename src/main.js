@@ -97,11 +97,9 @@ function Main() {
   return (
     <div>
       <body>
-        <Parallax className="custom-bg" strength={300}>
+        <Parallax className="custom-bg" strength={400}>
           <header id="first">
             <section class="hero-wrap js-fullheight">
-              <div class="overlay"></div>
-
               <Headroom disableInlineStyles={true}>
                 <Navbar class="navbar" collapseOnSelect expand="lg">
                   <Navbar.Brand href="#home">B</Navbar.Brand>
@@ -115,8 +113,8 @@ function Main() {
                     </Nav>
                   </Navbar.Collapse>
                 </Navbar>
-              </Headroom>
-
+              </Headroom>{' '}
+              <div class="overlay"></div>{' '}
               <div class="header-content">
                 {' '}
                 <Lottie options={defaultOptions} width={'80vmin'} />
@@ -132,12 +130,12 @@ function Main() {
                       Learn more
                     </Button>
                   </p>
-                </div>
-              </div>
+                </div>{' '}
+              </div>{' '}
             </section>
-          </header>
+          </header>{' '}
           <Background>
-            <img src={bgheader} style={{ height: '110vh' }} />
+            <img src={bgheader} style={{ backgroundSize: '200%' }} />
           </Background>
         </Parallax>
 

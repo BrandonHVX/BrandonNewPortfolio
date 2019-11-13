@@ -174,7 +174,7 @@ export default function MyTabs(props) {
                           </Link>
                         </h3>
                       </span>
-                      <p style={{ color: 'white', fontSize: '15px' }}>
+                      <p style={{ color: 'white', fontSize: '20px' }}>
                         Career social networking site. Create job postings and
                         network with other users.
                       </p>{' '}
@@ -200,7 +200,7 @@ export default function MyTabs(props) {
                           </Link>
                         </h3>
                       </span>
-                      <p style={{ color: 'white', fontSize: '15px' }}>
+                      <p style={{ color: 'white', fontSize: '20px' }}>
                         Top Stories news blog site using the New York Times API
                       </p>{' '}
                       <span>Full Stack Web Development</span>
@@ -215,24 +215,20 @@ export default function MyTabs(props) {
                   <div
                     class="project img d-flex justify-content-center align-items-center"
                     style={{
-                      backgroundImage: `url(${salon})`,
+                      backgroundImage: `url(${bta})`,
                       backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay-video"></div>
+                    <div class="overlay"></div>
 
                     <div class="text text-center p-4">
                       <h3 style={{ color: 'white' }}>
-                        Vibes & Views: Beat The Gym
+                        Bands by Taylor Alexandria
                       </h3>
-
-                      <Button
-                        variant="outline-light"
-                        class="btn"
-                        onClick={() => setModalShow(true)}
-                      >
-                        <span style={play}> Play Video</span>
-                      </Button>
+                      <p style={{ color: 'white' }}>
+                        Company profile and Interview with Miami based fashion
+                        designer Taylor Alexandria.
+                      </p>
 
                       <div>
                         <Bands
@@ -240,9 +236,17 @@ export default function MyTabs(props) {
                           onHide={() => setModalShow(false)}
                         />
                       </div>
+
                       <p class="mt-3">
                         <span style={title}>Video Production</span>
                       </p>
+                      <Button
+                        variant="outline-light"
+                        class="btn"
+                        onClick={() => setModalShow(true)}
+                      >
+                        <span style={play}> Play Video</span>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -254,11 +258,24 @@ export default function MyTabs(props) {
                       backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay-video"></div>
+                    <div class="overlay"></div>
                     <div class="text text-center p-4">
-                      <h3 style={{ color: 'white' }}>
-                        Vibes & Views: Beat The Gym
-                      </h3>
+                      <h3 style={{ color: 'white' }}>Solatto Salon</h3>
+                      <p style={{ color: 'white' }}>
+                        Company profile and Interview with Hair Stylist from the
+                        Solatto Salon located inside the 1 Hotel in Miami Beach,
+                        FL.
+                      </p>
+                      <div>
+                        <Bands
+                          show={modalShow}
+                          onHide={() => setModalShow(false)}
+                        />
+                      </div>
+
+                      <p class="mt-3">
+                        <span style={title}>Video Production</span>
+                      </p>
                       <p>
                         {' '}
                         <Button
@@ -269,16 +286,6 @@ export default function MyTabs(props) {
                           <span style={play}> Play Video</span>{' '}
                         </Button>{' '}
                       </p>
-
-                      <div>
-                        <Bands
-                          show={modalShow}
-                          onHide={() => setModalShow(false)}
-                        />
-                      </div>
-                      <p class="mt-3">
-                        <span style={title}>Video Production</span>
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -291,30 +298,35 @@ export default function MyTabs(props) {
                       backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay-video"></div>
+                    <div class="overlay"></div>
                     <div class="text text-center p-4">
                       <h3 style={{ color: 'white' }}>
-                        Vibes & Views: Beat The Gym
+                        Vibes & Vibes:Beat The Gym
                       </h3>
-
-                      <p>
-                        <Button
-                          variant="outline-light"
-                          class="btn"
-                          onClick={() => setModalShow(true)}
-                        >
-                          <span style={play}> Play Video</span>
-                        </Button>
+                      <p style={{ color: 'white' }}>
+                        Company profile and Interview with Hair Stylist from the
+                        Solatto Salon located inside the 1 Hotel in Miami Beach,
+                        FL.
                       </p>
-
                       <div>
                         <Bands
                           show={modalShow}
                           onHide={() => setModalShow(false)}
                         />
                       </div>
-                      <p>
+
+                      <p class="mt-3">
                         <span style={title}>Video Production</span>
+                      </p>
+                      <p>
+                        {' '}
+                        <Button
+                          variant="outline-light"
+                          class="btn"
+                          onClick={() => setModalShow(true)}
+                        >
+                          <span style={play}> Play Video</span>{' '}
+                        </Button>{' '}
                       </p>
                     </div>
                   </div>
