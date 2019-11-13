@@ -40,7 +40,8 @@ const play = {
   backgroundColor: 'transparent',
   borderColor: 'transparent',
   color: 'white',
-  textAlign: 'center'
+  textAlign: 'center',
+  textDecoration: 'none'
 }
 
 const title = {
@@ -218,25 +219,20 @@ export default function MyTabs(props) {
                       backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay" style={{ marginTop: '200px' }}></div>
-                    <div
-                      class="text text-center p-4"
-                      style={{ marginTop: '200px' }}
-                    >
+                    <div class="overlay-video"></div>
+
+                    <div class="text text-center p-4">
                       <h3 style={{ color: 'white' }}>
                         Vibes & Views: Beat The Gym
                       </h3>
 
-                      <p>
-                        <a onClick={() => setModalShow(true)}>
-                          <FontAwesomeIcon
-                            style={play}
-                            icon={faPlayCircle}
-                          ></FontAwesomeIcon>
-
-                          <span style={play}> Play Video</span>
-                        </a>
-                      </p>
+                      <Button
+                        variant="outline-light"
+                        class="btn"
+                        onClick={() => setModalShow(true)}
+                      >
+                        <span style={play}> Play Video</span>
+                      </Button>
 
                       <div>
                         <Bands
@@ -244,7 +240,7 @@ export default function MyTabs(props) {
                           onHide={() => setModalShow(false)}
                         />
                       </div>
-                      <p>
+                      <p class="mt-3">
                         <span style={title}>Video Production</span>
                       </p>
                     </div>
@@ -258,24 +254,20 @@ export default function MyTabs(props) {
                       backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay" style={{ marginTop: '200px' }}></div>
-                    <div
-                      class="text text-center p-4"
-                      style={{ marginTop: '200px' }}
-                    >
+                    <div class="overlay-video"></div>
+                    <div class="text text-center p-4">
                       <h3 style={{ color: 'white' }}>
                         Vibes & Views: Beat The Gym
                       </h3>
-
                       <p>
-                        <a onClick={() => setModalShow(true)}>
-                          <FontAwesomeIcon
-                            style={play}
-                            icon={faPlayCircle}
-                          ></FontAwesomeIcon>
-
-                          <span style={play}> Play Video</span>
-                        </a>
+                        {' '}
+                        <Button
+                          variant="outline-light"
+                          class="btn"
+                          onClick={() => setModalShow(true)}
+                        >
+                          <span style={play}> Play Video</span>{' '}
+                        </Button>{' '}
                       </p>
 
                       <div>
@@ -284,7 +276,7 @@ export default function MyTabs(props) {
                           onHide={() => setModalShow(false)}
                         />
                       </div>
-                      <p>
+                      <p class="mt-3">
                         <span style={title}>Video Production</span>
                       </p>
                     </div>
@@ -299,24 +291,20 @@ export default function MyTabs(props) {
                       backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay" style={{ marginTop: '200px' }}></div>
-                    <div
-                      class="text text-center p-4"
-                      style={{ marginTop: '200px' }}
-                    >
+                    <div class="overlay-video"></div>
+                    <div class="text text-center p-4">
                       <h3 style={{ color: 'white' }}>
                         Vibes & Views: Beat The Gym
                       </h3>
 
                       <p>
-                        <a onClick={() => setModalShow(true)}>
-                          <FontAwesomeIcon
-                            style={play}
-                            icon={faPlayCircle}
-                          ></FontAwesomeIcon>
-
+                        <Button
+                          variant="outline-light"
+                          class="btn"
+                          onClick={() => setModalShow(true)}
+                        >
                           <span style={play}> Play Video</span>
-                        </a>
+                        </Button>
                       </p>
 
                       <div>

@@ -8635,6 +8635,8 @@ h1, h2, h3, h4, h5,
     
       
       }
+
+      
   .project .text {
     max-width: 80%;
 
@@ -8648,14 +8650,26 @@ h1, h2, h3, h4, h5,
     .project .text h3 {
       font-size: 20px; }
       .project .text h3 a {
-        color: #fff; }
+        color: #fff;
+        text-decoration: none; }
     .project .text span {
       color: rgba(255, 255, 255, 0.8);
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 12px;
-      font-weight: 600; }
+      font-weight: 600;
+      text-decoration: none; }
 
+.btn  {
+
+   background-color: transparent;
+
+}
+.btn:hover   {
+
+  background-color: rgb(0, 208, 255);
+
+}
 
       
     @media (max-width: 767.98px) {
@@ -8676,8 +8690,13 @@ h1, h2, h3, h4, h5,
         @media (min-width: 767.98px) {
 
         .project:hover .overlay-video, .project:focus  {
-          opacity: 1; 
-        background-color: #33ff00e0}
+          opacity: .9;
+          background: #0066ff;}
+
+
+
+
+        
 
         }
   .project:hover .overlay, .project:focus  {
