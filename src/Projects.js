@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import {
   Card,
   Row,
@@ -10,56 +10,56 @@ import {
   Button,
   Modal,
   ButtonToolbar
-} from "react-bootstrap";
-import projectpic from "./images/work-1.jpg";
-import nyxlogo from "./images/nyx-news.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
-import salon from "./images/salon.svg";
-import bta from "./images/bta.svg";
-import jobsnow from "./images/JOBSNOW.png";
-import ReactPlayer from "react-player";
+} from 'react-bootstrap'
+import projectpic from './images/work-1.jpg'
+import nyxlogo from './images/nyx-news.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import salon from './images/salon.svg'
+import bta from './images/bta.svg'
+import jobsnow from './images/JOBSNOW.png'
+import ReactPlayer from 'react-player'
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 const nav = {
-  borderColor: "#00387d",
+  borderColor: '#00387d',
 
-  textAlign: "center"
-};
+  textAlign: 'center'
+}
 
 const text = {
-  fontSize: "12px",
-  marginTop: "20px",
-  marginRight: "10px"
-};
+  fontSize: '12px',
+  marginTop: '20px',
+  marginRight: '10px'
+}
 
 const play = {
-  fontSize: "15px",
-  marginTop: "10px",
-  backgroundColor: "transparent",
-  borderColor: "transparent",
-  color: "white",
-  textAlign: "center"
-};
+  fontSize: '15px',
+  marginTop: '10px',
+  backgroundColor: 'transparent',
+  borderColor: 'transparent',
+  color: 'white',
+  textAlign: 'center'
+}
 
 const title = {
-  marginTop: "10px"
-};
+  marginTop: '10px'
+}
 
 const jumbo = {
-  backgroundColor: "transparent "
-};
+  backgroundColor: 'transparent '
+}
 
 const navtabs = {
-  display: "flex",
-  borderColor: "black",
-  justifyContent: "center"
-};
+  display: 'flex',
+  borderColor: 'black',
+  justifyContent: 'center'
+}
 
 const navlinks = {
-  borderColor: "blue"
-};
+  borderColor: 'blue'
+}
 
 function Bands(props) {
   return (
@@ -92,7 +92,7 @@ function Bands(props) {
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
-  );
+  )
 }
 
 function Salon(props) {
@@ -126,12 +126,12 @@ function Salon(props) {
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
-  );
+  )
 }
 
 export default function MyTabs(props) {
-  const [activeTab, setActiveTab] = useState("1");
-  const [modalShow, setModalShow] = React.useState(false);
+  const [activeTab, setActiveTab] = useState('1')
+  const [modalShow, setModalShow] = React.useState(false)
 
   return (
     <div>
@@ -160,8 +160,8 @@ export default function MyTabs(props) {
                     class="project img d-flex justify-content-center align-items-center"
                     style={{
                       backgroundImage: `url(${jobsnow})`,
-                      backgroundColor: "blue",
-                      backgroundSize: "70%"
+                      backgroundColor: 'blue',
+                      backgroundSize: '70%'
                     }}
                   >
                     <div class="overlay"></div>
@@ -173,10 +173,10 @@ export default function MyTabs(props) {
                           </Link>
                         </h3>
                       </span>
-                      <p style={{ color: "white", fontSize: "15px" }}>
+                      <p style={{ color: 'white', fontSize: '15px' }}>
                         Career social networking site. Create job postings and
                         network with other users.
-                      </p>{" "}
+                      </p>{' '}
                       <span>Full Stack Web Development</span>
                     </div>
                   </div>
@@ -186,8 +186,8 @@ export default function MyTabs(props) {
                     class="project img d-flex justify-content-center align-items-center"
                     style={{
                       backgroundImage: `url(${nyxlogo})`,
-                      backgroundSize: "100%",
-                      backgroundColor: "black"
+                      backgroundSize: '100%',
+                      backgroundColor: 'black'
                     }}
                   >
                     <div class="overlay"></div>
@@ -199,9 +199,9 @@ export default function MyTabs(props) {
                           </Link>
                         </h3>
                       </span>
-                      <p style={{ color: "white", fontSize: "15px" }}>
+                      <p style={{ color: 'white', fontSize: '15px' }}>
                         Top Stories news blog site using the New York Times API
-                      </p>{" "}
+                      </p>{' '}
                       <span>Full Stack Web Development</span>
                     </div>
                   </div>
@@ -210,19 +210,21 @@ export default function MyTabs(props) {
             </Tab.Pane>
             <Tab.Pane eventKey="second">
               <div class="row no-gutters py-4">
-                <div class="col-md-4 p-1">
+                <div class="col-md-4  p-1">
                   <div
                     class="project img d-flex justify-content-center align-items-center"
                     style={{
-                      backgroundImage: `url(${bta})`,
-                      backgroundSize: "170%",
-                      backgroundPosition: "cover"
+                      backgroundImage: `url(${salon})`,
+                      backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay-video"></div>
-                    <div class="text text-center p-4">
-                      <h3 style={{ color: "white" }}>
-                        Bands by Taylor Alexandria
+                    <div class="overlay" style={{ marginTop: '200px' }}></div>
+                    <div
+                      class="text text-center p-4"
+                      style={{ marginTop: '200px' }}
+                    >
+                      <h3 style={{ color: 'white' }}>
+                        Vibes & Views: Beat The Gym
                       </h3>
 
                       <p>
@@ -253,21 +255,28 @@ export default function MyTabs(props) {
                     class="project img d-flex justify-content-center align-items-center"
                     style={{
                       backgroundImage: `url(${salon})`,
-                      backgroundSize: "200%"
+                      backgroundSize: 'cover'
                     }}
                   >
-                    <div class="overlay-video"></div>
-                    <div class="text text-center p-4">
-                      <h3 style={{ color: "white" }}>Solatto Salon</h3>
+                    <div class="overlay" style={{ marginTop: '200px' }}></div>
+                    <div
+                      class="text text-center p-4"
+                      style={{ marginTop: '200px' }}
+                    >
+                      <h3 style={{ color: 'white' }}>
+                        Vibes & Views: Beat The Gym
+                      </h3>
 
-                      <a onClick={() => setModalShow(true)}>
-                        <FontAwesomeIcon
-                          style={play}
-                          icon={faPlayCircle}
-                        ></FontAwesomeIcon>
+                      <p>
+                        <a onClick={() => setModalShow(true)}>
+                          <FontAwesomeIcon
+                            style={play}
+                            icon={faPlayCircle}
+                          ></FontAwesomeIcon>
 
-                        <span style={play}> Play Video</span>
-                      </a>
+                          <span style={play}> Play Video</span>
+                        </a>
+                      </p>
 
                       <div>
                         <Bands
@@ -285,11 +294,17 @@ export default function MyTabs(props) {
                 <div class="col-md-4  p-1">
                   <div
                     class="project img d-flex justify-content-center align-items-center"
-                    style={{ backgroundImage: `url(${salon})` }}
+                    style={{
+                      backgroundImage: `url(${salon})`,
+                      backgroundSize: 'cover'
+                    }}
                   >
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                      <h3 style={{ color: "white" }}>
+                    <div class="overlay" style={{ marginTop: '200px' }}></div>
+                    <div
+                      class="text text-center p-4"
+                      style={{ marginTop: '200px' }}
+                    >
+                      <h3 style={{ color: 'white' }}>
                         Vibes & Views: Beat The Gym
                       </h3>
 
@@ -324,5 +339,5 @@ export default function MyTabs(props) {
         </Tab.Container>
       </div>
     </div>
-  );
+  )
 }

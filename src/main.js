@@ -1,31 +1,31 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Projects from "./Projects.js";
-import ae from "./images/ae.svg";
-import ps from "./images/ps.svg";
-import ai from "./images/ai.svg";
-import xd from "./images/xd.svg";
-import pr from "./images/Pr.svg";
-import rails from "./images/rails.svg";
-import sass from "./images/sass.svg";
-import node from "./images/node.svg";
-import slack from "./images/slack.svg";
-import git from "./images/git.svg";
-import npm from "./images/npm.png";
-import vue from "./images/vuejs.svg";
-import js from "./images/js.svg";
-import ruby from "./images/ruby.png";
-import reactsvg from "./images/react.svg";
-import html5 from "./images/html5.svg";
-import projectpic from "./images/work-1.jpg";
-import bootstrap from "./images/bootstrap.svg";
-import about from "./images/about.jpg";
-import brandonpic from "./images/BrandonPic.jpg";
-import nyxlogo from "./images/nyx-logo.png";
-import Lottie from "react-lottie";
-import animationData from "./images/greeting.json";
-import Scrollspy from "react-scrollspy";
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import Projects from './Projects.js'
+import ae from './images/ae.svg'
+import ps from './images/ps.svg'
+import ai from './images/ai.svg'
+import xd from './images/xd.svg'
+import pr from './images/Pr.svg'
+import rails from './images/rails.svg'
+import sass from './images/sass.svg'
+import node from './images/node.svg'
+import slack from './images/slack.svg'
+import git from './images/git.svg'
+import npm from './images/npm.png'
+import vue from './images/vuejs.svg'
+import js from './images/js.svg'
+import ruby from './images/ruby.png'
+import reactsvg from './images/react.svg'
+import html5 from './images/html5.svg'
+import projectpic from './images/work-1.jpg'
+import bootstrap from './images/bootstrap.svg'
+import about from './images/about.jpg'
+import brandonpic from './images/BrandonPic.jpg'
+import nyxlogo from './images/nyx-logo.png'
+import Lottie from 'react-lottie'
+import animationData from './images/greeting.json'
+import Scrollspy from 'react-scrollspy'
 import {
   Card,
   Nav,
@@ -37,61 +37,61 @@ import {
   Jumbotron,
   Button,
   ProgressBar
-} from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faFilm } from "@fortawesome/free-solid-svg-icons";
-import { faPalette } from "@fortawesome/free-solid-svg-icons";
-import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import Headroom from "react-headroom";
-import NavBar from "./Navbar.js";
-import bgheader from "./images/slide-4.jpg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import JobsNow from "./pages/JobsNow.js";
-import { Parallax, Background } from "react-parallax";
+} from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faFilm } from '@fortawesome/free-solid-svg-icons'
+import { faPalette } from '@fortawesome/free-solid-svg-icons'
+import { faPhotoVideo } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import Headroom from 'react-headroom'
+import NavBar from './Navbar.js'
+import bgheader from './images/slide-4.jpg'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import JobsNow from './pages/JobsNow.js'
+import { Parallax, Background } from 'react-parallax'
 
 const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-};
+  fontFamily: 'sans-serif',
+  textAlign: 'center'
+}
 const insideStyles = {
-  background: "white",
+  background: 'white',
   padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%,-50%)"
-};
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%,-50%)'
+}
 const defaultOptions = {
   loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: ""
+    preserveAspectRatio: ''
   }
-};
+}
 
-const image1 = `${bgheader}`;
+const image1 = `${bgheader}`
 
 const lottietitle = {
-  backgroundColor: "transparent "
-};
+  backgroundColor: 'transparent '
+}
 
 const text = {
-  fontSize: "12px",
-  marginTop: "20px"
-};
+  fontSize: '12px',
+  marginTop: '20px'
+}
 
 const col = {
-  marginTop: "20px"
-};
+  marginTop: '20px'
+}
 
 const jumbo = {
-  backgroundColor: "transparent "
-};
+  backgroundColor: 'transparent '
+}
 
 function Main() {
   return (
@@ -118,8 +118,8 @@ function Main() {
               </Headroom>
 
               <div class="header-content">
-                {" "}
-                <Lottie options={defaultOptions} width={"80vmin"} />
+                {' '}
+                <Lottie options={defaultOptions} width={'80vmin'} />
                 <div class="inner">
                   <p>
                     I'm a software engineer in frontend and backend development
@@ -137,7 +137,7 @@ function Main() {
             </section>
           </header>
           <Background>
-            <img src={bgheader} style={{ height: "110vh" }} />
+            <img src={bgheader} style={{ height: '110vh' }} />
           </Background>
         </Parallax>
 
@@ -154,10 +154,10 @@ function Main() {
                     class="img d-flex align-self-stretch align-items-center"
                     style={{
                       backgroundImage: `url(${brandonpic})`,
-                      borderRadius: "90%",
-                      width: "300px",
-                      height: "300px",
-                      margin: "30px"
+                      borderRadius: '90%',
+                      width: '300px',
+                      height: '300px',
+                      margin: '30px'
                     }}
                   ></div>
                 </div>
@@ -177,11 +177,11 @@ function Main() {
                         <span>Name:</span> <span>Ronaldo Fredrickson</span>
                       </li>
                       <li class="d-flex">
-                        <span>Date of birth:</span>{" "}
+                        <span>Date of birth:</span>{' '}
                         <span>November 28, 1989</span>
                       </li>
                       <li class="d-flex">
-                        <span>Address:</span>{" "}
+                        <span>Address:</span>{' '}
                         <span>San Francisco CA 97987 USA</span>
                       </li>
                       <li class="d-flex">
@@ -437,7 +437,7 @@ function Main() {
                       <span class="position">Wyncode Academy - Miami, FL</span>
                       <p>
                         Certificate of compeletion certified by Florida
-                        Department of Education.{" "}
+                        Department of Education.{' '}
                       </p>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ function Main() {
                       </span>
                       <p>
                         Certificate of compeletion certified by St. Louis Agency
-                        on Training and Employment.{" "}
+                        on Training and Employment.{' '}
                       </p>
                     </div>
                   </div>
@@ -495,7 +495,7 @@ function Main() {
                         Responsibile for development of new full stack web
                         application using MongoDB, Express, React and Node to
                         register new applicants and share program related
-                        information.{" "}
+                        information.{' '}
                       </li>
                       <li class="mt-2">
                         Designing and coding custom HTML emails for
@@ -522,7 +522,7 @@ function Main() {
                       <li class="mt-2">
                         Produced commericals and video interviews used for
                         social media advertisments and marketing campaigns for
-                        the Urban Film Festival.{" "}
+                        the Urban Film Festival.{' '}
                       </li>
                       <li class="mt-2">
                         Performed audio and video editing services in order to
@@ -671,48 +671,48 @@ function Main() {
                   <div>
                     <h6 style={styles}>Coding</h6>
                     <div class="row">
-                      {" "}
+                      {' '}
                       <div class="col-md-6 ">
-                        {" "}
+                        {' '}
                         <div class="progress-wrap">
                           <h3>HTML/CSS</h3>
-                          <ProgressBar now={80} label={"80%"} />
+                          <ProgressBar now={80} label={'80%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>JavaScript</h3>
-                          <ProgressBar now={73} label={"73%"} />
+                          <ProgressBar now={73} label={'73%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Bootstrap</h3>
-                          <ProgressBar now={80} label={"80%"} />
+                          <ProgressBar now={80} label={'80%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>React.Js</h3>
-                          <ProgressBar now={70} label={"70%"} />
+                          <ProgressBar now={70} label={'70%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Gatsby.Js</h3>
-                          <ProgressBar now={78} label={"78%"} />
+                          <ProgressBar now={78} label={'78%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Ruby on Rails</h3>
-                          <ProgressBar now={67} label={"67%"} />
+                          <ProgressBar now={67} label={'67%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Node.Js</h3>
-                          <ProgressBar now={70} label={"75%"} />
+                          <ProgressBar now={70} label={'75%'} />
                         </div>
                       </div>
                     </div>
@@ -720,36 +720,36 @@ function Main() {
                   <div class="mt-5">
                     <h6>Creative Skills</h6>
                     <div class="row">
-                      {" "}
+                      {' '}
                       <div class="col-md-6 ">
-                        {" "}
+                        {' '}
                         <div class="progress-wrap">
                           <h3> Adobe Photoshop</h3>
-                          <ProgressBar now={95} label={"95%"} />
+                          <ProgressBar now={95} label={'95%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3> Adobe Illustrator</h3>
-                          <ProgressBar now={90} label={"90%"} />
+                          <ProgressBar now={90} label={'90%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Adobe XD</h3>
-                          <ProgressBar now={78} label={"78%"} />
+                          <ProgressBar now={78} label={'78%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Adobe Premeire Pro</h3>
-                          <ProgressBar now={99} label={"99%"} />
+                          <ProgressBar now={99} label={'99%'} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Adobe After Effects</h3>
-                          <ProgressBar now={88} label={"88%"} />
+                          <ProgressBar now={88} label={'88%'} />
                         </div>
                       </div>
                     </div>
@@ -763,7 +763,7 @@ function Main() {
                         <div class="text ">
                           <span class="flaticon-ideas">
                             <FontAwesomeIcon icon={faBriefcase} />
-                          </span>{" "}
+                          </span>{' '}
                           Educated and Experienced in graphic dsign and video
                           production.
                         </div>
@@ -796,9 +796,9 @@ function Main() {
                         <div class="text ">
                           <p>
                             <span class="position">
-                              {" "}
-                              Comprehensive understanding and experience{" "}
-                            </span>{" "}
+                              {' '}
+                              Comprehensive understanding and experience{' '}
+                            </span>{' '}
                             in full stack web development, UX/UI design for web
                             applications, video production and graphic design
                             for marketing campaigns
@@ -855,150 +855,16 @@ function Main() {
 
         <footer class="ftco-footer ftco-section">
           <div class="container">
-            <div class="row mb-5">
-              <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                  <h2 class="ftco-heading-2">About</h2>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                    <li class="ftco-animate">
-                      <a href="#">
-                        <span class="icon-twitter"></span>
-                      </a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#">
-                        <span class="icon-facebook"></span>
-                      </a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#">
-                        <span class="icon-instagram"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md">
-                <div class="ftco-footer-widget mb-4 ml-md-4">
-                  <h2 class="ftco-heading-2">Links</h2>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Home
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>About
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Services
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Projects
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                  <h2 class="ftco-heading-2">Services</h2>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Web
-                        Design
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Web
-                        Development
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Business
-                        Strategy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Data
-                        Analysis
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="icon-long-arrow-right mr-2"></span>Graphic
-                        Design
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                  <h2 class="ftco-heading-2">Have a Questions?</h2>
-                  <div class="block-23 mb-3">
-                    <ul>
-                      <li>
-                        <span class="icon icon-map-marker"></span>
-                        <span class="text">
-                          203 Fake St. Mountain View, San Francisco, California,
-                          USA
-                        </span>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <span class="icon icon-phone"></span>
-                          <span class="text">+2 392 3929 210</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <span class="icon icon-envelope"></span>
-                          <span class="text">info@yourdomain.com</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="row">
               <div class="col-md-12 text-center">
-                <p>
-                  Copyright &copy;
-                  <script>document.write(new Date().getFullYear());</script> All
-                  rights reserved | This template is made with{" "}
-                  <i class="icon-heart color-danger" aria-hidden="true"></i> by{" "}
-                  <a href="https://colorlib.com" target="_blank">
-                    Colorlib
-                  </a>
-                </p>
+                <p>Copyright &copy; 2019</p>
               </div>
             </div>
           </div>
         </footer>
       </body>
     </div>
-  );
+  )
 }
 
-export default Main;
+export default Main
