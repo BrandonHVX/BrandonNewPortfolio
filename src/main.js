@@ -1,31 +1,31 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import Projects from './Projects.js'
-import ae from './images/ae.svg'
-import ps from './images/ps.svg'
-import ai from './images/ai.svg'
-import xd from './images/xd.svg'
-import pr from './images/Pr.svg'
-import rails from './images/rails.svg'
-import sass from './images/sass.svg'
-import node from './images/node.svg'
-import slack from './images/slack.svg'
-import git from './images/git.svg'
-import npm from './images/npm.png'
-import vue from './images/vuejs.svg'
-import js from './images/js.svg'
-import ruby from './images/ruby.png'
-import reactsvg from './images/react.svg'
-import html5 from './images/html5.svg'
-import projectpic from './images/work-1.jpg'
-import bootstrap from './images/bootstrap.svg'
-import about from './images/about.jpg'
-import brandonpic from './images/BrandonPic.jpg'
-import nyxlogo from './images/nyx-logo.png'
-import Lottie from 'react-lottie'
-import animationData from './images/greeting.json'
-import Scrollspy from 'react-scrollspy'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Projects from "./Projects.js";
+import ae from "./images/ae.svg";
+import ps from "./images/ps.svg";
+import ai from "./images/ai.svg";
+import xd from "./images/xd.svg";
+import pr from "./images/Pr.svg";
+import rails from "./images/rails.svg";
+import sass from "./images/sass.svg";
+import node from "./images/node.svg";
+import slack from "./images/slack.svg";
+import git from "./images/git.svg";
+import npm from "./images/npm.png";
+import vue from "./images/vuejs.svg";
+import js from "./images/js.svg";
+import ruby from "./images/ruby.png";
+import reactsvg from "./images/react.svg";
+import html5 from "./images/html5.svg";
+import projectpic from "./images/work-1.jpg";
+import bootstrap from "./images/bootstrap.svg";
+import about from "./images/about.jpg";
+import brandonpic from "./images/BrandonPic.jpg";
+import nyxlogo from "./images/nyx-logo.png";
+import Lottie from "react-lottie";
+import animationData from "./images/greeting.json";
+import Scrollspy from "react-scrollspy";
 import {
   Card,
   Nav,
@@ -37,61 +37,61 @@ import {
   Jumbotron,
   Button,
   ProgressBar
-} from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
-import { faFilm } from '@fortawesome/free-solid-svg-icons'
-import { faPalette } from '@fortawesome/free-solid-svg-icons'
-import { faPhotoVideo } from '@fortawesome/free-solid-svg-icons'
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
-import Headroom from 'react-headroom'
-import NavBar from './Navbar.js'
-import bgheader from './images/slide-4.jpg'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import JobsNow from './pages/JobsNow.js'
-import { Parallax, Background } from 'react-parallax'
+} from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
+import { faPalette } from "@fortawesome/free-solid-svg-icons";
+import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import Headroom from "react-headroom";
+import NavBar from "./Navbar.js";
+import bgheader from "./images/slide-4.jpg";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import JobsNow from "./pages/JobsNow.js";
+import { Parallax, Background } from "react-parallax";
 
 const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center'
-}
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
 const insideStyles = {
-  background: 'white',
+  background: "white",
   padding: 20,
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%,-50%)'
-}
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)"
+};
 const defaultOptions = {
   loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: ''
+    preserveAspectRatio: ""
   }
-}
+};
 
-const image1 = `${bgheader}`
+const image1 = `${bgheader}`;
 
 const lottietitle = {
-  backgroundColor: 'transparent '
-}
+  backgroundColor: "transparent "
+};
 
 const text = {
-  fontSize: '12px',
-  marginTop: '20px'
-}
+  fontSize: "12px",
+  marginTop: "20px"
+};
 
 const col = {
-  marginTop: '20px'
-}
+  marginTop: "20px"
+};
 
 const jumbo = {
-  backgroundColor: 'transparent '
-}
+  backgroundColor: "transparent "
+};
 
 function Main() {
   return (
@@ -101,23 +101,45 @@ function Main() {
           <header id="first">
             <section class="hero-wrap js-fullheight">
               <Headroom disableInlineStyles={true}>
-                <Navbar class="navbar" collapseOnSelect expand="lg">
-                  <Navbar.Brand href="#home">B</Navbar.Brand>
+                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                      <Nav.Link href="/"> BACK</Nav.Link>
-                      <Nav.Link href="/"> BACK</Nav.Link>
-                      <Nav.Link href="/"> BACK</Nav.Link>
-                      <Nav.Link href="/"> BACK</Nav.Link>
+                      <Nav.Link href="#features">Features</Nav.Link>
+                      <Nav.Link href="#pricing">Pricing</Nav.Link>
+                      <NavDropdown
+                        title="Dropdown"
+                        id="collasible-nav-dropdown"
+                      >
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                    </Nav>
+                    <Nav>
+                      <Nav.Link href="#deets">More deets</Nav.Link>
+                      <Nav.Link eventKey={2} href="#memes">
+                        Dank memes
+                      </Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
                 </Navbar>
-              </Headroom>{' '}
-              <div class="overlay"></div>{' '}
+              </Headroom>{" "}
+              <div class="overlay"></div>{" "}
               <div class="header-content">
-                {' '}
-                <Lottie options={defaultOptions} width={'80vmin'} />
+                {" "}
+                <Lottie options={defaultOptions} width={"80vmin"} />
                 <div class="inner">
                   <p>
                     I'm a software engineer in frontend and backend development
@@ -130,12 +152,12 @@ function Main() {
                       Learn more
                     </Button>
                   </p>
-                </div>{' '}
-              </div>{' '}
+                </div>{" "}
+              </div>{" "}
             </section>
-          </header>{' '}
+          </header>{" "}
           <Background>
-            <img src={bgheader} style={{ backgroundSize: '200%' }} />
+            <img src={bgheader} style={{ backgroundSize: "200%" }} />
           </Background>
         </Parallax>
 
@@ -152,10 +174,10 @@ function Main() {
                     class="img d-flex align-self-stretch align-items-center"
                     style={{
                       backgroundImage: `url(${brandonpic})`,
-                      borderRadius: '90%',
-                      width: '300px',
-                      height: '300px',
-                      margin: '30px'
+                      borderRadius: "90%",
+                      width: "300px",
+                      height: "300px",
+                      margin: "30px"
                     }}
                   ></div>
                 </div>
@@ -167,41 +189,41 @@ function Main() {
                     <h1 class="big">About</h1>
                     <h2 class="mb-4">About Me</h2>
                     <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
+                      Creative self-motivated professional with cross-functional
+                      skills including expertise in digital media, video
+                      production, full stack web development, graphic design,
+                      marketing, project management and client engagement.
                     </p>
                     <ul class="about-info mt-4 px-md-0 px-2">
                       <li class="d-flex">
-                        <span>Name:</span> <span>Ronaldo Fredrickson</span>
+                        <span>Name:</span> <span>Brandon Gines </span>
                       </li>
                       <li class="d-flex">
-                        <span>Date of birth:</span>{' '}
+                        <span>Date of birth:</span>{" "}
                         <span>November 28, 1989</span>
                       </li>
                       <li class="d-flex">
-                        <span>Address:</span>{' '}
-                        <span>San Francisco CA 97987 USA</span>
+                        <span>Address:</span> <span>Miami, FL 33138 USA</span>
                       </li>
                       <li class="d-flex">
-                        <span>Zip code:</span> <span>1000</span>
+                        <span>Email:</span>{" "}
+                        <span>
+                          <a href="mailto: brandongines@gmail.com">
+                            brandongines@gmail.com
+                          </a>
+                        </span>
                       </li>
                       <li class="d-flex">
-                        <span>Email:</span> <span>ronaldo@gmail.com</span>
-                      </li>
-                      <li class="d-flex">
-                        <span>Phone: </span> <span>+1-2234-5678-9-0</span>
+                        <span>Phone: </span>{" "}
+                        <span>
+                          <a href="tel:310-651-1330">310-651-1330</a>
+                        </span>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="counter-wrap  d-flex mt-md-3">
                   <div class="text">
-                    <p class="mb-4">
-                      <span class="number" data-number="120">
-                        0
-                      </span>
-                      <span>Project complete</span>
-                    </p>
                     <p>
                       <a href="#" class="btn btn-primary py-3 px-3">
                         Download CV
@@ -209,186 +231,6 @@ function Main() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="ftco-section" id="services-section">
-          <div class="container-fluid px-md-5">
-            <div class="row">
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-analysis"></i>
-                  </span>
-
-                  <div class="desc">
-                    <h3 class="mb-5">Web Development</h3>
-
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={js} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={reactsvg} width={40} alt="" />
-                          </span>
-
-                          <span>
-                            <img src={node} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={npm} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ruby} width={35} alt="" />
-                          </span>
-                          <span>
-                            <img src={rails} width={35} alt="" />
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-flasks"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Video Production</h3>
-
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={pr} width={40} alt="" />
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <div href="#" class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-ideas"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Web Design</h3>
-
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={html5} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={reactsvg} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={bootstrap} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={sass} width={40} alt="" />
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-innovation"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Graphic Design</h3>
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={ps} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ai} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={xd} width={40} alt="" />
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-ux-design"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Motion Graphics</h3>
-                    <div class="row bg-faded">
-                      <div class="row-4 mx-auto text-center">
-                        <p>
-                          <span>
-                            <img src={ps} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ai} width={40} alt="" />
-                          </span>
-                          <span>
-                            <img src={ae} width={40} alt="" />
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 text-center d-flex ">
-                <a href="#" class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-idea"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-4">Photography</h3>
-                    <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
-                    </p>
-                  </div>
-                </a>
               </div>
             </div>
           </div>
@@ -415,7 +257,7 @@ function Main() {
                       <a href="#page-3">Skills</a>
                     </li>
                     <li>
-                      <a href="#page-4">Awards</a>
+                      <a href="#page-4">Expertise</a>
                     </li>
                   </ul>
                 </nav>
@@ -435,7 +277,7 @@ function Main() {
                       <span class="position">Wyncode Academy - Miami, FL</span>
                       <p>
                         Certificate of compeletion certified by Florida
-                        Department of Education.{' '}
+                        Department of Education.{" "}
                       </p>
                     </div>
                   </div>
@@ -453,7 +295,7 @@ function Main() {
                       </span>
                       <p>
                         Certificate of compeletion certified by St. Louis Agency
-                        on Training and Employment.{' '}
+                        on Training and Employment.{" "}
                       </p>
                     </div>
                   </div>
@@ -493,7 +335,7 @@ function Main() {
                         Responsibile for development of new full stack web
                         application using MongoDB, Express, React and Node to
                         register new applicants and share program related
-                        information.{' '}
+                        information.{" "}
                       </li>
                       <li class="mt-2">
                         Designing and coding custom HTML emails for
@@ -520,7 +362,7 @@ function Main() {
                       <li class="mt-2">
                         Produced commericals and video interviews used for
                         social media advertisments and marketing campaigns for
-                        the Urban Film Festival.{' '}
+                        the Urban Film Festival.{" "}
                       </li>
                       <li class="mt-2">
                         Performed audio and video editing services in order to
@@ -669,48 +511,48 @@ function Main() {
                   <div>
                     <h6 style={styles}>Coding</h6>
                     <div class="row">
-                      {' '}
+                      {" "}
                       <div class="col-md-6 ">
-                        {' '}
+                        {" "}
                         <div class="progress-wrap">
                           <h3>HTML/CSS</h3>
-                          <ProgressBar now={80} label={'80%'} />
+                          <ProgressBar now={80} label={"80%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>JavaScript</h3>
-                          <ProgressBar now={73} label={'73%'} />
+                          <ProgressBar now={73} label={"73%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Bootstrap</h3>
-                          <ProgressBar now={80} label={'80%'} />
+                          <ProgressBar now={80} label={"80%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>React.Js</h3>
-                          <ProgressBar now={70} label={'70%'} />
+                          <ProgressBar now={70} label={"70%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Gatsby.Js</h3>
-                          <ProgressBar now={78} label={'78%'} />
+                          <ProgressBar now={78} label={"78%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Ruby on Rails</h3>
-                          <ProgressBar now={67} label={'67%'} />
+                          <ProgressBar now={67} label={"67%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
                           <h3>Node.Js</h3>
-                          <ProgressBar now={70} label={'75%'} />
+                          <ProgressBar now={70} label={"75%"} />
                         </div>
                       </div>
                     </div>
@@ -718,36 +560,36 @@ function Main() {
                   <div class="mt-5">
                     <h6>Creative Skills</h6>
                     <div class="row">
-                      {' '}
+                      {" "}
                       <div class="col-md-6 ">
-                        {' '}
+                        {" "}
                         <div class="progress-wrap">
-                          <h3> Adobe Photoshop</h3>
-                          <ProgressBar now={95} label={'95%'} />
+                          <h3> Video Production</h3>
+                          <ProgressBar now={95} label={"95%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
-                          <h3> Adobe Illustrator</h3>
-                          <ProgressBar now={90} label={'90%'} />
+                          <h3> Graphic Design</h3>
+                          <ProgressBar now={90} label={"95%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
-                          <h3>Adobe XD</h3>
-                          <ProgressBar now={78} label={'78%'} />
+                          <h3>Motion Graphics</h3>
+                          <ProgressBar now={78} label={"78%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
-                          <h3>Adobe Premeire Pro</h3>
-                          <ProgressBar now={99} label={'99%'} />
+                          <h3>Brochure & Page Layout</h3>
+                          <ProgressBar now={90} label={"90%"} />
                         </div>
                       </div>
                       <div class="col-md-6 ">
                         <div class="progress-wrap">
-                          <h3>Adobe After Effects</h3>
-                          <ProgressBar now={88} label={'88%'} />
+                          <h3>Web Design</h3>
+                          <ProgressBar now={88} label={"88%"} />
                         </div>
                       </div>
                     </div>
@@ -756,17 +598,6 @@ function Main() {
                 <div id="page-4" class="page four">
                   <h2 class="heading">Expertise</h2>
                   <div class="row">
-                    <div class="col-md-6 ">
-                      <div class="resume-wrap d-flex ">
-                        <div class="text ">
-                          <span class="flaticon-ideas">
-                            <FontAwesomeIcon icon={faBriefcase} />
-                          </span>{' '}
-                          Educated and Experienced in graphic dsign and video
-                          production.
-                        </div>
-                      </div>
-                    </div>
                     <div class="col-md-6 ">
                       <div class="resume-wrap d-flex ">
                         <div class="text ">
@@ -794,9 +625,9 @@ function Main() {
                         <div class="text ">
                           <p>
                             <span class="position">
-                              {' '}
-                              Comprehensive understanding and experience{' '}
-                            </span>{' '}
+                              {" "}
+                              Comprehensive understanding and experience{" "}
+                            </span>{" "}
                             in full stack web development, UX/UI design for web
                             applications, video production and graphic design
                             for marketing campaigns
@@ -841,10 +672,6 @@ function Main() {
               <div class="col-md-12 heading-section text-center ">
                 <h1 class="big big-2">Projects</h1>
                 <h2 class="mb-4">Portfolio</h2>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia
-                </p>
               </div>
             </div>
             <Projects />
@@ -862,7 +689,7 @@ function Main() {
         </footer>
       </body>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

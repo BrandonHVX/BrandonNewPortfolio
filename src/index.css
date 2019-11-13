@@ -2,7 +2,7 @@
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('http://www.masterslider.com/wp-content/uploads/sites/5/2016/09/heroheader1-bg.jpg');
+    url("http://www.masterslider.com/wp-content/uploads/sites/5/2016/09/heroheader1-bg.jpg");
 
   /* Set a specific height */
   height: 200%;
@@ -61,14 +61,10 @@ header {
   -o-background-size: cover;
 }
 
-header .overlay {
-  background-color: black;
-}
-
 header .header-content {
   position: relative;
   width: 100%;
-  padding: 200px 45px;
+  padding: 2px 4px;
   text-align: center;
   z-index: 0;
 }
